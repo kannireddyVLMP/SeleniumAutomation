@@ -1,0 +1,1098 @@
+2026-03-23 12:27:43 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 12:27:43 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:27:44 INFO  Base:71 - Page loaded successfully!
+2026-03-23 12:27:44 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:27:44 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_122741/initial_page.png
+2026-03-23 12:32:05 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 12:32:05 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:32:05 INFO  Base:71 - Page loaded successfully!
+2026-03-23 12:32:05 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:32:05 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_123203/initial_page.png
+2026-03-23 12:34:41 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 12:34:41 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:34:42 INFO  Base:71 - Page loaded successfully!
+2026-03-23 12:34:42 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:34:42 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_123440/initial_page.png
+2026-03-23 12:38:47 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 12:38:47 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:38:50 INFO  Base:71 - Page loaded successfully!
+2026-03-23 12:38:50 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:38:51 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_123846/initial_page.png
+2026-03-23 12:41:08 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 12:41:08 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:41:08 INFO  Base:71 - Page loaded successfully!
+2026-03-23 12:41:08 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:41:08 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_124106/initial_page.png
+2026-03-23 12:42:20 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 12:42:20 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:42:20 INFO  Base:71 - Page loaded successfully!
+2026-03-23 12:42:20 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:42:20 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_124218/initial_page.png
+2026-03-23 12:43:44 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 12:43:44 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:43:45 INFO  Base:71 - Page loaded successfully!
+2026-03-23 12:43:45 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:43:45 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_124343/initial_page.png
+2026-03-23 12:46:20 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 12:46:20 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:46:21 INFO  Base:71 - Page loaded successfully!
+2026-03-23 12:46:21 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:46:21 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_124619/initial_page.png
+2026-03-23 12:48:03 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 12:48:03 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:48:04 INFO  Base:71 - Page loaded successfully!
+2026-03-23 12:48:04 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:48:04 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_124802/initial_page.png
+2026-03-23 12:55:32 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 12:55:32 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:55:32 INFO  Base:71 - Page loaded successfully!
+2026-03-23 12:55:32 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:55:33 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_125530/initial_page.png
+2026-03-23 12:59:12 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 12:59:12 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:59:14 INFO  Base:71 - Page loaded successfully!
+2026-03-23 12:59:14 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 12:59:14 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_125910/initial_page.png
+2026-03-23 13:00:27 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:00:27 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:00:28 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:00:28 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:00:28 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_130025/initial_page.png
+2026-03-23 13:02:08 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:02:08 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:02:10 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:02:10 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:02:10 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_130206/initial_page.png
+2026-03-23 13:02:55 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:02:55 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:02:56 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:02:56 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:02:57 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_130253/initial_page.png
+2026-03-23 13:04:25 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:04:25 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:04:25 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:04:25 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:04:25 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_130423/initial_page.png
+2026-03-23 13:08:31 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:08:31 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:08:31 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:08:31 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:08:31 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_130829/initial_page.png
+2026-03-23 13:09:32 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:09:32 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:09:34 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:09:34 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:09:34 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_130931/initial_page.png
+2026-03-23 13:13:26 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:13:26 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:13:27 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:13:27 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:13:28 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_131324/initial_page.png
+2026-03-23 13:14:21 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:14:21 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:14:22 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:14:22 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:14:23 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_131420/initial_page.png
+2026-03-23 13:15:08 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:15:08 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:15:09 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:15:09 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:15:09 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_131507/initial_page.png
+2026-03-23 13:15:20 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:15:20 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:15:22 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:15:22 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:15:23 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_131519/initial_page.png
+2026-03-23 13:19:39 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:19:39 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:19:41 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:19:41 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:19:41 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_131938/initial_page.png
+2026-03-23 13:20:26 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:20:26 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:20:28 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:20:28 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:20:28 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_132025/initial_page.png
+2026-03-23 13:21:25 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:21:25 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:21:25 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:21:25 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:21:25 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_132123/initial_page.png
+2026-03-23 13:26:11 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:26:11 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:26:12 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:26:12 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:26:12 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_132609/initial_page.png
+2026-03-23 13:28:30 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:28:30 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:28:31 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:28:31 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:28:31 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_132829/initial_page.png
+2026-03-23 13:29:42 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:29:42 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:29:44 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:29:44 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:29:44 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_132940/initial_page.png
+2026-03-23 13:40:47 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:40:47 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:40:47 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:40:47 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:40:47 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_134045/initial_page.png
+2026-03-23 13:40:55 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 13:40:55 INFO  Base:64 - Product Added Successfully ZARA COAT 3
+2026-03-23 13:40:55 INFO  Base:113 - Cart text is: 1Cart added successfully
+2026-03-23 13:42:50 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:42:50 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:42:50 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:42:50 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:42:50 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_134248/initial_page.png
+2026-03-23 13:42:58 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 13:42:58 INFO  Base:64 - Product Added Successfully ZARA COAT 3
+2026-03-23 13:42:58 INFO  Base:113 - Cart text is: 1Cart added successfully
+2026-03-23 13:47:43 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:47:43 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:47:44 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:47:44 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:47:44 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_134742/initial_page.png
+2026-03-23 13:47:51 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 13:47:51 INFO  Base:63 - Product Added Successfully ZARA COAT 3
+2026-03-23 13:47:53 INFO  Base:112 - Cart text is: 1Cart added successfully
+2026-03-23 13:48:33 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:48:33 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:48:33 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:48:33 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:48:33 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_134831/initial_page.png
+2026-03-23 13:48:40 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 13:48:40 INFO  Base:63 - Product Added Successfully ZARA COAT 3
+2026-03-23 13:48:42 INFO  Base:112 - Cart text is: 1 Cart added successfully
+2026-03-23 13:51:20 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:51:20 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:51:21 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:51:21 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:51:21 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_135119/initial_page.png
+2026-03-23 13:51:28 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 13:51:28 INFO  Base:63 - Product Added Successfully ZARA COAT 3
+2026-03-23 13:51:30 INFO  Base:112 - Cart text is: 1 Cart added successfully
+2026-03-23 13:54:24 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:54:24 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:54:24 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:54:24 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:54:25 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_135423/initial_page.png
+2026-03-23 13:54:32 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 13:54:32 INFO  Base:63 - Product Added Successfully ZARA COAT 3
+2026-03-23 13:54:34 INFO  Base:112 - Cart text is: 1 Cart added successfully
+2026-03-23 13:55:37 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 13:55:37 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:55:38 INFO  Base:71 - Page loaded successfully!
+2026-03-23 13:55:38 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 13:55:38 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_135536/initial_page.png
+2026-03-23 13:55:45 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 14:01:36 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 14:01:36 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 14:01:37 INFO  Base:71 - Page loaded successfully!
+2026-03-23 14:01:37 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 14:01:37 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_140135/initial_page.png
+2026-03-23 14:01:44 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 14:01:44 INFO  Base:64 - Product Added Successfully ZARA COAT 3
+2026-03-23 14:01:46 INFO  Base:114 - Cart text is: 1 Cart added successfully
+2026-03-23 14:03:28 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 14:03:28 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 14:03:30 INFO  Base:71 - Page loaded successfully!
+2026-03-23 14:03:30 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 14:03:30 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_140327/initial_page.png
+2026-03-23 14:03:38 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 14:03:38 INFO  Base:64 - Product Added Successfully ZARA COAT 3
+2026-03-23 14:03:40 INFO  Base:114 - Cart text is: 1 Cart added successfully
+2026-03-23 14:04:25 INFO  Base:47 - Running tests on Chrome browser
+2026-03-23 14:04:25 INFO  Base:67 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 14:04:25 INFO  Base:71 - Page loaded successfully!
+2026-03-23 14:04:25 INFO  Base:72 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 14:04:26 INFO  Base:82 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_140423/initial_page.png
+2026-03-23 14:04:33 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 14:04:33 INFO  Base:64 - Product Added Successfully ZARA COAT 3
+2026-03-23 14:04:35 INFO  Base:114 - Cart text is: 1 Cart added successfully
+2026-03-23 14:24:36 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 14:24:36 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 14:24:38 INFO  Base:72 - Page loaded successfully!
+2026-03-23 14:24:38 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 14:24:38 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_142434/initial_page.png
+2026-03-23 14:24:45 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 14:24:45 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 14:24:47 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 14:24:50 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 14:24:52 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 14:25:02 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 14:25:02 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 14:25:02 INFO  Base:72 - Page loaded successfully!
+2026-03-23 14:25:02 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 14:25:02 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_142500/initial_page.png
+2026-03-23 14:25:10 INFO  Base:46 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 14:25:10 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 14:25:12 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 14:25:14 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 14:25:16 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:10:17 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:10:17 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:10:17 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:10:17 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:10:17 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_151015/initial_page.png
+2026-03-23 15:10:24 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:10:24 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:10:27 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:10:29 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:10:31 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:10:31 INFO  Base:35 - Navigated to Payment Page.
+2026-03-23 15:10:31 INFO  Base:37 - Filling personal info...
+2026-03-23 15:10:36 ERROR Base:55 - Personal info failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_151015/personal_info_failed.png
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[placeholder='Credit Card Number']"}
+  (Session info: chrome=146.0.7680.154)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6915414b59e731ad6e99e1568d9aff33, findElement {using=css selector, value=input[placeholder='Credit Card Number']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53316}, goog:processID: 18808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53316/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6915414b59e731ad6e99e1568d9aff33
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.Pearson.CommonMethods.CommonMethods.sendKeys(CommonMethods.java:20)
+	at com.Pearson.Pages.Payment.fillPersonalInfo(Payment.java:38)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:37)
+2026-03-23 15:11:18 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:11:18 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:11:19 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:11:19 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:11:19 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_151117/initial_page.png
+2026-03-23 15:11:26 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:11:26 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:11:28 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:11:30 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:11:32 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:11:32 INFO  Base:35 - Navigated to Payment Page.
+2026-03-23 15:11:32 INFO  Base:37 - Filling personal info...
+2026-03-23 15:11:38 ERROR Base:55 - Personal info failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_151117/personal_info_failed.png
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[placeholder='Credit Card Number']"}
+  (Session info: chrome=146.0.7680.154)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f338ffac3b0ef37d572e9e186a54e4b6, findElement {value=input[placeholder='Credit Card Number'], using=css selector}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60639}, goog:processID: 28908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60639/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f338ffac3b0ef37d572e9e186a54e4b6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.Pearson.CommonMethods.CommonMethods.sendKeys(CommonMethods.java:20)
+	at com.Pearson.Pages.Payment.fillPersonalInfo(Payment.java:38)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:37)
+2026-03-23 15:12:49 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:12:49 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:12:49 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:12:49 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:12:50 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_151248/initial_page.png
+2026-03-23 15:12:57 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:12:57 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:12:59 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:13:01 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:13:03 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:13:03 INFO  Base:35 - Navigated to Payment Page.
+2026-03-23 15:13:26 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:13:26 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:13:27 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:13:27 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:13:28 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_151325/initial_page.png
+2026-03-23 15:13:35 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:13:35 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:13:37 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:13:39 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:13:41 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:13:46 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:18:17 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:18:17 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:18:18 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:18:18 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:18:18 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_151816/initial_page.png
+2026-03-23 15:18:25 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:18:25 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:18:27 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:18:29 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:18:31 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:18:33 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:18:53 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:18:53 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:18:53 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:18:53 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:18:54 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_151852/initial_page.png
+2026-03-23 15:19:01 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:19:01 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:19:03 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:19:05 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:19:07 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:19:09 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:19:09 INFO  Base:37 - Filling personal info...
+2026-03-23 15:19:14 ERROR Base:55 - Personal info failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_151852/personal_info_failed.png
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[placeholder='Credit Card Number']"}
+  (Session info: chrome=146.0.7680.154)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3595c25970f4753098652e71e634cf13, findElement {using=css selector, value=input[placeholder='Credit Card Number']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63363}, goog:processID: 7304, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63363/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3595c25970f4753098652e71e634cf13
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.Pearson.CommonMethods.CommonMethods.sendKeys(CommonMethods.java:20)
+	at com.Pearson.Pages.Payment.fillPersonalInfo(Payment.java:38)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:37)
+2026-03-23 15:22:45 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:22:45 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:22:47 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:22:47 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:22:47 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_152244/initial_page.png
+2026-03-23 15:22:54 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:22:55 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:22:57 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:22:59 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:23:01 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:23:03 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:23:03 INFO  Base:37 - Filling personal info...
+2026-03-23 15:23:08 ERROR Base:55 - Personal info failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_152244/personal_info_failed.png
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Credit Card Number']"}
+  (Session info: chrome=146.0.7680.154)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b37829514024a635ee732e11dd82ca9, findElement {value=//input[@placeholder='Credit Card Number'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62793}, goog:processID: 21088, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62793/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b37829514024a635ee732e11dd82ca9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.Pearson.CommonMethods.CommonMethods.sendKeys(CommonMethods.java:20)
+	at com.Pearson.Pages.Payment.fillPersonalInfo(Payment.java:38)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:37)
+2026-03-23 15:25:34 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:25:34 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:25:35 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:25:35 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:25:35 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_152533/initial_page.png
+2026-03-23 15:25:43 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:25:43 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:25:45 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:25:47 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:25:49 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:25:51 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:25:51 INFO  Base:37 - Filling personal info...
+2026-03-23 15:28:37 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:28:37 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:28:38 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:28:38 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:28:38 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_152836/initial_page.png
+2026-03-23 15:28:45 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:28:45 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:28:47 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:28:49 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:28:51 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:28:53 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:28:53 INFO  Base:37 - Filling personal info...
+2026-03-23 15:28:54 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 15:28:54 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 15:28:54 ERROR Base:56 - Personal info failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_152836/personal_info_failed.png
+org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=146.0.7680.154)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2c813e82fe61a736545bb699fdcb7501, findElement {using=css selector, value=//div[@class='title' and contains(text(),'CVV') ]/parent::div/input}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61401}, goog:processID: 6500, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61401/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c813e82fe61a736545bb699fdcb7501
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.Pearson.CommonMethods.CommonMethods.sendKeys(CommonMethods.java:20)
+	at com.Pearson.Pages.Payment.fillPersonalInfo(Payment.java:49)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:37)
+2026-03-23 15:31:12 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:31:12 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:31:15 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:31:15 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:31:15 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_153111/initial_page.png
+2026-03-23 15:31:22 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:31:22 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:31:24 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:31:26 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:31:28 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:31:31 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:31:31 INFO  Base:37 - Filling personal info...
+2026-03-23 15:31:31 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 15:31:31 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 15:31:31 ERROR Base:56 - Personal info failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_153111/personal_info_failed.png
+org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=146.0.7680.154)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16195ff28bb038db8c773427ebf73f62, findElement {using=css selector, value=//div[@class='title' and contains(text(),'Name') ]/parent::div/input}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51282}, goog:processID: 27600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51282/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16195ff28bb038db8c773427ebf73f62
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.Pearson.CommonMethods.CommonMethods.sendKeys(CommonMethods.java:20)
+	at com.Pearson.Pages.Payment.fillPersonalInfo(Payment.java:50)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:37)
+2026-03-23 15:32:43 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:32:43 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:32:43 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:32:43 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:32:44 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_153241/initial_page.png
+2026-03-23 15:32:51 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:32:51 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:32:53 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:32:55 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:32:57 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:32:59 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:32:59 INFO  Base:37 - Filling personal info...
+2026-03-23 15:32:59 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 15:32:59 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 15:32:59 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 15:32:59 INFO  Base:64 - Validating shipping info...
+2026-03-23 15:33:05 ERROR Base:90 - Shipping info failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_153241/shipping_info_failed.png
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[placeholder='Email']"}
+  (Session info: chrome=146.0.7680.154)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5d6ad735c17ff7907d47bb63000386d5, findElement {using=css selector, value=input[placeholder='Email']}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52878}, goog:processID: 2720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52878/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5d6ad735c17ff7907d47bb63000386d5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.Pearson.Pages.Payment.validateShippingInfo(Payment.java:65)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:40)
+2026-03-23 15:39:11 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:39:11 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:39:12 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:39:12 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:39:12 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_153909/initial_page.png
+2026-03-23 15:39:19 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:39:19 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:39:22 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:39:24 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:39:26 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:39:28 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:39:28 INFO  Base:37 - Filling personal info...
+2026-03-23 15:39:28 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 15:39:28 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 15:39:28 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 15:39:28 INFO  Base:64 - Validating shipping info...
+2026-03-23 15:39:28 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 15:39:31 INFO  Base:74 - Typed country letters: India
+2026-03-23 15:39:31 INFO  Base:80 - Selected country: India
+2026-03-23 15:39:31 INFO  Base:98 - Placing order...
+2026-03-23 15:39:32 ERROR Base:104 - Place order failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_153909/place_order_failed.png
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1050, 652)
+  (Session info: chrome=146.0.7680.154)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e2d8dd88048941f8675bd6c54fecc0f, clickElement {id=f.B960C04D7C9ACDE36FD50A9CF91B07A8.d.5E79801255BEB4AAF3C017BC1A3BF8D7.e.137}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56686}, goog:processID: 18400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56686/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5e2d8dd88048941f8675bd6c54fecc0f)] -> css selector: a.btnn.action__submit]
+Session ID: 5e2d8dd88048941f8675bd6c54fecc0f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.Pearson.CommonMethods.CommonMethods.click(CommonMethods.java:24)
+	at com.Pearson.Pages.Payment.placeOrder(Payment.java:99)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:41)
+2026-03-23 15:41:35 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:41:35 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:41:35 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:41:36 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:41:36 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_154133/initial_page.png
+2026-03-23 15:41:43 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:41:43 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:41:45 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:41:47 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:41:49 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:41:51 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:41:51 INFO  Base:37 - Filling personal info...
+2026-03-23 15:41:51 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 15:41:51 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 15:41:51 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 15:41:51 INFO  Base:64 - Validating shipping info...
+2026-03-23 15:41:52 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 15:41:54 INFO  Base:74 - Typed country letters: India
+2026-03-23 15:41:54 INFO  Base:80 - Selected country: India
+2026-03-23 15:41:54 INFO  Base:98 - Placing order...
+2026-03-23 15:41:56 ERROR Base:104 - Place order failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_154133/place_order_failed.png
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1050, 652)
+  (Session info: chrome=146.0.7680.154)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fa9d310ee61bdba75a605f4c474d6bf4, clickElement {id=f.54584F1502F7042F064106615785C238.d.E46EB151B5688B57D0DB1B7E9CB71E50.e.135}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61450}, goog:processID: 26676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61450/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fa9d310ee61bdba75a605f4c474d6bf4)] -> xpath: //a[contains(text(),'Place Order')]]
+Session ID: fa9d310ee61bdba75a605f4c474d6bf4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.Pearson.CommonMethods.CommonMethods.click(CommonMethods.java:24)
+	at com.Pearson.Pages.Payment.placeOrder(Payment.java:99)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:41)
+2026-03-23 15:43:02 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:43:02 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:43:03 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:43:03 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:43:03 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_154301/initial_page.png
+2026-03-23 15:43:10 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:43:10 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:43:12 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:43:14 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:43:16 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:43:18 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:43:18 INFO  Base:37 - Filling personal info...
+2026-03-23 15:43:19 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 15:43:19 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 15:43:19 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 15:43:19 INFO  Base:64 - Validating shipping info...
+2026-03-23 15:43:19 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 15:43:22 INFO  Base:74 - Typed country letters: India
+2026-03-23 15:43:22 INFO  Base:80 - Selected country: India
+2026-03-23 15:43:22 INFO  Base:98 - Placing order...
+2026-03-23 15:43:23 ERROR Base:104 - Place order failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_154301/place_order_failed.png
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1050, 652)
+  (Session info: chrome=146.0.7680.154)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [379e7219040c24d6b6ff0bde569c7711, clickElement {id=f.F15230C964CD176AB4FA5CD5F2C9E497.d.4C09929C7601AAEB1F8432535F8468F7.e.136}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61237}, goog:processID: 9164, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61237/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (379e7219040c24d6b6ff0bde569c7711)] -> xpath: //a[contains(text(),'Place Order ')]]
+Session ID: 379e7219040c24d6b6ff0bde569c7711
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.Pearson.CommonMethods.CommonMethods.click(CommonMethods.java:24)
+	at com.Pearson.Pages.Payment.placeOrder(Payment.java:99)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:41)
+2026-03-23 15:44:10 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:44:10 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:44:11 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:44:11 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:44:11 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_154409/initial_page.png
+2026-03-23 15:44:18 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:44:18 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:44:20 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:44:23 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:44:25 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:44:27 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:44:27 INFO  Base:37 - Filling personal info...
+2026-03-23 15:44:27 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 15:44:27 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 15:44:27 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 15:44:27 INFO  Base:64 - Validating shipping info...
+2026-03-23 15:44:27 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 15:44:30 INFO  Base:74 - Typed country letters: India
+2026-03-23 15:44:30 INFO  Base:80 - Selected country: India
+2026-03-23 15:44:30 INFO  Base:98 - Placing order...
+2026-03-23 15:44:31 ERROR Base:104 - Place order failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_154409/place_order_failed.png
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1050, 652)
+  (Session info: chrome=146.0.7680.154)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b93db04a41380f5c51795901939f25cf, clickElement {id=f.A7EDAC114774E7028E4C0D38499AC8CC.d.5A3145391444741315CFA5EB063E45CE.e.136}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55815}, goog:processID: 21708, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55815/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b93db04a41380f5c51795901939f25cf)] -> xpath: //a[contains(text(),'Place Order ')]]
+Session ID: b93db04a41380f5c51795901939f25cf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.Pearson.CommonMethods.CommonMethods.click(CommonMethods.java:24)
+	at com.Pearson.Pages.Payment.placeOrder(Payment.java:99)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:41)
+2026-03-23 15:45:35 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:45:35 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:45:35 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:45:35 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:45:36 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_154533/initial_page.png
+2026-03-23 15:45:43 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:45:43 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:45:45 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:45:47 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:45:49 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:45:51 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:45:51 INFO  Base:37 - Filling personal info...
+2026-03-23 15:45:51 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 15:45:51 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 15:45:52 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 15:45:52 INFO  Base:64 - Validating shipping info...
+2026-03-23 15:45:52 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 15:45:54 INFO  Base:74 - Typed country letters: India
+2026-03-23 15:45:54 INFO  Base:80 - Selected country: India
+2026-03-23 15:45:54 INFO  Base:98 - Placing order...
+2026-03-23 15:45:56 ERROR Base:105 - Place order failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_154533/place_order_failed.png
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1050, 652)
+  (Session info: chrome=146.0.7680.154)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [875fda17794dd3efd4a25d7e112a6cc5, clickElement {id=f.E944C53B4927608E0338C7A0057AE610.d.B68F49BC83E9CEF5F8D5B7AD17EC73E1.e.136}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51907}, goog:processID: 12912, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51907/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (875fda17794dd3efd4a25d7e112a6cc5)] -> xpath: //a[contains(text(),'Place Order ')]]
+Session ID: 875fda17794dd3efd4a25d7e112a6cc5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.Pearson.CommonMethods.CommonMethods.click(CommonMethods.java:24)
+	at com.Pearson.Pages.Payment.placeOrder(Payment.java:100)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:41)
+2026-03-23 15:47:51 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:47:51 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:47:52 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:47:52 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:47:52 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_154749/initial_page.png
+2026-03-23 15:48:00 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:48:00 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:48:02 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:48:04 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:48:06 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:48:08 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:48:08 INFO  Base:37 - Filling personal info...
+2026-03-23 15:48:08 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 15:48:08 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 15:48:08 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 15:48:08 INFO  Base:64 - Validating shipping info...
+2026-03-23 15:48:08 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 15:48:11 INFO  Base:74 - Typed country letters: India
+2026-03-23 15:48:11 INFO  Base:80 - Selected country: India
+2026-03-23 15:48:11 INFO  Base:98 - Placing order...
+2026-03-23 15:48:11 INFO  Base:101 - Order placed successfully.
+2026-03-23 15:48:30 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:48:30 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:48:31 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:48:31 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:48:32 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_154828/initial_page.png
+2026-03-23 15:48:39 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:48:39 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:48:41 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:48:43 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:48:45 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:48:47 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:48:47 INFO  Base:37 - Filling personal info...
+2026-03-23 15:48:47 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 15:48:47 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 15:48:47 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 15:48:47 INFO  Base:64 - Validating shipping info...
+2026-03-23 15:48:47 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 15:48:50 INFO  Base:74 - Typed country letters: India
+2026-03-23 15:48:50 INFO  Base:80 - Selected country: India
+2026-03-23 15:48:50 INFO  Base:98 - Placing order...
+2026-03-23 15:48:50 INFO  Base:101 - Order placed successfully.
+2026-03-23 15:49:26 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 15:49:26 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:49:28 INFO  Base:72 - Page loaded successfully!
+2026-03-23 15:49:28 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 15:49:28 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_154925/initial_page.png
+2026-03-23 15:49:35 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 15:49:35 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 15:49:37 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 15:49:39 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 15:49:41 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 15:49:43 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 15:49:43 INFO  Base:37 - Filling personal info...
+2026-03-23 15:49:44 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 15:49:44 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 15:49:44 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 15:49:44 INFO  Base:64 - Validating shipping info...
+2026-03-23 15:49:44 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 15:49:47 INFO  Base:74 - Typed country letters: India
+2026-03-23 15:49:47 INFO  Base:80 - Selected country: India
+2026-03-23 15:49:47 INFO  Base:98 - Placing order...
+2026-03-23 15:49:50 INFO  Base:102 - Order placed successfully.
+2026-03-23 16:48:20 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 16:48:20 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:48:22 INFO  Base:72 - Page loaded successfully!
+2026-03-23 16:48:22 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:48:22 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_164818/initial_page.png
+2026-03-23 16:48:29 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 16:48:29 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 16:48:31 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 16:48:33 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 16:48:35 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 16:48:38 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 16:48:38 INFO  Base:37 - Filling personal info...
+2026-03-23 16:48:38 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 16:48:38 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 16:48:38 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 16:48:38 INFO  Base:64 - Validating shipping info...
+2026-03-23 16:48:38 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 16:48:41 INFO  Base:74 - Typed country letters: India
+2026-03-23 16:48:41 INFO  Base:80 - Selected country: India
+2026-03-23 16:48:41 INFO  Base:98 - Placing order...
+2026-03-23 16:48:44 INFO  Base:102 - Order placed successfully.
+2026-03-23 16:48:44 INFO  Base:31 - Validating order confirmation message...
+2026-03-23 16:48:49 ERROR Base:38 - Order confirmation validation failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_164818/order_confirmation_failed.png
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'THANKYOU FOR THE ORDER')]"}
+  (Session info: chrome=146.0.7680.154)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a6410f4098dec75c69b448853e29763a, findElement {using=xpath, value=//h1[contains(text(),'THANKYOU FOR THE ORDER')]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58342}, goog:processID: 27236, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58342/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a6410f4098dec75c69b448853e29763a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.Pearson.CommonMethods.CommonMethods.getText(CommonMethods.java:27)
+	at com.Pearson.Pages.Order.CheckOrderConfirmed(Order.java:32)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:43)
+2026-03-23 16:52:52 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 16:52:52 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:52:53 INFO  Base:72 - Page loaded successfully!
+2026-03-23 16:52:53 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:52:53 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_165251/initial_page.png
+2026-03-23 16:53:00 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 16:53:00 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 16:53:02 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 16:53:04 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 16:53:06 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 16:53:08 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 16:53:08 INFO  Base:37 - Filling personal info...
+2026-03-23 16:53:09 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 16:53:09 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 16:53:09 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 16:53:09 INFO  Base:64 - Validating shipping info...
+2026-03-23 16:53:09 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 16:53:12 INFO  Base:74 - Typed country letters: India
+2026-03-23 16:53:12 INFO  Base:80 - Selected country: India
+2026-03-23 16:53:12 INFO  Base:98 - Placing order...
+2026-03-23 16:53:15 INFO  Base:102 - Order placed successfully.
+2026-03-23 16:53:15 INFO  Base:31 - Validating order confirmation message...
+2026-03-23 16:53:15 ERROR Base:38 - Order confirmation validation failed. Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_165251/order_confirmation_failed.png
+org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //h1[normalize-space()='Thankyou for the order.' because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//h1[normalize-space()='Thankyou for the order.'' is not a valid XPath expression.
+  (Session info: chrome=146.0.7680.154)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [feded0297dfc52206c1b18a512ed7437, findElement {value=//h1[normalize-space()='Thankyou for the order.', using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\SATHIS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58233}, goog:processID: 25200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58233/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: feded0297dfc52206c1b18a512ed7437
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.Pearson.CommonMethods.CommonMethods.getText(CommonMethods.java:27)
+	at com.Pearson.Pages.Order.CheckOrderConfirmed(Order.java:32)
+	at com.Pearson.Pages.EndtoEndTest.main(EndtoEndTest.java:43)
+2026-03-23 16:54:29 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 16:54:29 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:54:30 INFO  Base:72 - Page loaded successfully!
+2026-03-23 16:54:30 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:54:31 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_165427/initial_page.png
+2026-03-23 16:54:38 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 16:54:38 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 16:54:40 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 16:54:42 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 16:54:44 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 16:54:46 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 16:54:46 INFO  Base:37 - Filling personal info...
+2026-03-23 16:54:46 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 16:54:46 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 16:54:47 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 16:54:47 INFO  Base:64 - Validating shipping info...
+2026-03-23 16:54:47 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 16:54:49 INFO  Base:74 - Typed country letters: India
+2026-03-23 16:54:49 INFO  Base:80 - Selected country: India
+2026-03-23 16:54:49 INFO  Base:98 - Placing order...
+2026-03-23 16:54:52 INFO  Base:102 - Order placed successfully.
+2026-03-23 16:54:52 INFO  Base:31 - Validating order confirmation message...
+2026-03-23 16:54:52 INFO  Base:33 - Confirmation message found: THANKYOU FOR THE ORDER.
+2026-03-23 16:56:09 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 16:56:09 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:56:09 INFO  Base:72 - Page loaded successfully!
+2026-03-23 16:56:09 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:56:09 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_165607/initial_page.png
+2026-03-23 16:56:17 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 16:56:17 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 16:56:19 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 16:56:21 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 16:56:23 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 16:56:25 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 16:56:25 INFO  Base:37 - Filling personal info...
+2026-03-23 16:56:25 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 16:56:25 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 16:56:25 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 16:56:25 INFO  Base:64 - Validating shipping info...
+2026-03-23 16:56:25 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 16:56:28 INFO  Base:74 - Typed country letters: India
+2026-03-23 16:56:28 INFO  Base:80 - Selected country: India
+2026-03-23 16:56:28 INFO  Base:98 - Placing order...
+2026-03-23 16:56:31 INFO  Base:102 - Order placed successfully.
+2026-03-23 16:56:31 INFO  Base:31 - Validating order confirmation message...
+2026-03-23 16:56:31 INFO  Base:33 - Confirmation message found: THANKYOU FOR THE ORDER.
+2026-03-23 16:57:10 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 16:57:10 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:57:10 INFO  Base:72 - Page loaded successfully!
+2026-03-23 16:57:10 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:57:11 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_165708/initial_page.png
+2026-03-23 16:57:18 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 16:57:18 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 16:57:20 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 16:57:22 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 16:57:24 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 16:57:26 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 16:57:26 INFO  Base:37 - Filling personal info...
+2026-03-23 16:57:26 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 16:57:26 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 16:57:27 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 16:57:27 INFO  Base:64 - Validating shipping info...
+2026-03-23 16:57:27 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 16:57:29 INFO  Base:74 - Typed country letters: India
+2026-03-23 16:57:29 INFO  Base:80 - Selected country: India
+2026-03-23 16:57:29 INFO  Base:98 - Placing order...
+2026-03-23 16:57:32 INFO  Base:102 - Order placed successfully.
+2026-03-23 16:57:32 INFO  Base:31 - Validating order confirmation message...
+2026-03-23 16:57:32 INFO  Base:33 - Confirmation message found: THANKYOU FOR THE ORDER.
+2026-03-23 16:57:32 INFO  Base:46 - Validating product name on order page...
+2026-03-23 16:57:33 INFO  Base:48 - Product name found: ZARA COAT 3
+Qty: 1 | Expected: ZARA COAT 3
+2026-03-23 16:59:05 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 16:59:05 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:59:06 INFO  Base:72 - Page loaded successfully!
+2026-03-23 16:59:06 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 16:59:06 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_165904/initial_page.png
+2026-03-23 16:59:13 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 16:59:13 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 16:59:15 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 16:59:18 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 16:59:20 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 16:59:22 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 16:59:22 INFO  Base:37 - Filling personal info...
+2026-03-23 16:59:22 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 16:59:22 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 16:59:22 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 16:59:22 INFO  Base:64 - Validating shipping info...
+2026-03-23 16:59:22 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 16:59:25 INFO  Base:74 - Typed country letters: India
+2026-03-23 16:59:25 INFO  Base:80 - Selected country: India
+2026-03-23 16:59:25 INFO  Base:98 - Placing order...
+2026-03-23 16:59:28 INFO  Base:102 - Order placed successfully.
+2026-03-23 16:59:28 INFO  Base:31 - Validating order confirmation message...
+2026-03-23 16:59:28 INFO  Base:33 - Confirmation message found: THANKYOU FOR THE ORDER.
+2026-03-23 16:59:28 INFO  Base:46 - Validating product name on order page...
+2026-03-23 16:59:28 INFO  Base:48 - Product name found: ZARA COAT 3
+Qty: 1 | Expected: ZARA COAT 3
+2026-03-23 17:11:08 INFO  Base:48 - Running tests on Chrome browser
+2026-03-23 17:11:08 INFO  Base:68 - Loading URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 17:11:08 INFO  Base:72 - Page loaded successfully!
+2026-03-23 17:11:08 INFO  Base:73 - Current URL: https://rahulshettyacademy.com/client/#/auth/login
+2026-03-23 17:11:08 INFO  Base:83 - Screenshot saved: target/screenshots/com.Pearson.Pages.EndtoEndTest/20260323_171106/initial_page.png
+2026-03-23 17:11:16 INFO  Base:47 - Login Successful with username: sandhi.019@gmail.com
+2026-03-23 17:11:16 INFO  Base:67 - Product Added Successfully ZARA COAT 3
+2026-03-23 17:11:18 INFO  Base:117 - Cart text is: 1 Cart added successfully
+2026-03-23 17:11:20 INFO  Base:133 - Navigated to Cart Page Successfully
+2026-03-23 17:11:22 INFO  Base:31 - Product in cart matches expected: ZARA COAT 3
+2026-03-23 17:11:24 INFO  Base:36 - Navigated to Payment Page.
+2026-03-23 17:11:24 INFO  Base:37 - Filling personal info...
+2026-03-23 17:11:24 INFO  Base:43 - Selected expiry month: 12
+2026-03-23 17:11:24 INFO  Base:47 - Selected expiry date: 31
+2026-03-23 17:11:24 INFO  Base:51 - Personal info filled successfully.
+2026-03-23 17:11:24 INFO  Base:64 - Validating shipping info...
+2026-03-23 17:11:24 INFO  Base:67 - Auto-filled email: sandhi.019@gmail.com | Expected: JobNeed@1234
+2026-03-23 17:11:27 INFO  Base:74 - Typed country letters: India
+2026-03-23 17:11:27 INFO  Base:80 - Selected country: India
+2026-03-23 17:11:27 INFO  Base:98 - Placing order...
+2026-03-23 17:11:30 INFO  Base:102 - Order placed successfully.
+2026-03-23 17:11:30 INFO  Base:29 - Validating order confirmation message...
+2026-03-23 17:11:30 INFO  Base:31 - Confirmation message found: THANKYOU FOR THE ORDER.
+2026-03-23 17:11:30 INFO  Base:44 - Validating product name on order page...
+2026-03-23 17:11:30 INFO  Base:48 - Product name found: ZARA COAT 3 | Expected: ZARA COAT 3
+2026-03-23 17:11:30 INFO  Base:61 - Validating product quantity on order page...
+2026-03-23 17:11:30 INFO  Base:67 - Product quantity found: 1 | Expected: 1
