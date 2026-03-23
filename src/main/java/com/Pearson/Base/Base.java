@@ -18,7 +18,7 @@ public class Base
 {
     static Properties prop;
     public static WebDriver driver;
-    public static String uname;
+    public static String uName;
     public static String pwd;
 
    public  static Logger logger = Logger.getLogger(Base.class);
@@ -34,7 +34,7 @@ public class Base
         //env = System.getProperty("env","QA");
         String browser = prop.getProperty("Browser");
         String url = prop.getProperty("URL");
-        uname=prop.getProperty("UserName");
+        uName=prop.getProperty("UserName");
         pwd = prop.getProperty("Password");
 
         switch(browser)
@@ -59,7 +59,7 @@ public class Base
                 logger.error("Browser not supported, please check the configuration.");
         }
 
-        if(url == null|| uname == null || pwd == null)
+        if(url == null|| uName == null || pwd == null)
         {
             logger.error("No URL or credentials found for env");
             throw new RuntimeException("No URL found for env: ");
