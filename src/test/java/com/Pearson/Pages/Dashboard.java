@@ -33,9 +33,7 @@ public class Dashboard extends Base
 
 
     // Locators
-    private By productCards = By.cssSelector(".card-body");
-    private By productName = By.cssSelector(".card-body b");
-    private By productPrice = By.cssSelector(".card-body label");
+
     private By viewButton = By.xpath(".//button[contains(text(),'View')]");
     private By addToCartButton = By.xpath(".//button[contains(text(),'Add To Cart')]");
     private By navHome = By.xpath("//button[contains(text(),'HOME')]");
