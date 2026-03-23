@@ -62,8 +62,8 @@ public class Order extends Base
 
              By productQty  = By.xpath("//div[@class='sub' and contains(text(),'1')]");   // adjust if table structure differs
 
-            String qtyText = cm.getText(productQty, 5).replace("Qty:", "").trim();
-            int actualQty = Integer.parseInt(qtyText);
+            String qyText = cm.getText(productQty, 5).replace("Qty:", "").trim();
+            int actualQty = Integer.parseInt(qyText);
             logger.info("Product quantity found: " + actualQty + " | Expected: " + expectedQty);
             Assert.assertEquals(actualQty,expectedQty);
         } catch (Exception e) {
