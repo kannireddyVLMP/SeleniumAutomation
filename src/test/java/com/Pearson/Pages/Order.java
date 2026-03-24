@@ -3,6 +3,9 @@ package com.Pearson.Pages;
 import com.Pearson.Base.Base;
 import com.Pearson.CommonMethods.CommonMethods;
 import com.Pearson.Screenshot.TakesScreenShot;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -12,7 +15,7 @@ public class Order extends Base
     private WebDriver driver;
     private CommonMethods cm;
     private String screenshotFolder;
-
+    private static final Logger logger = LogManager.getLogger(Order.class);
     // Locators
     private By confirmationMessage = By.xpath("//h1[normalize-space()='Thankyou for the order.']");
 

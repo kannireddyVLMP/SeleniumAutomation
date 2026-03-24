@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AutomationSuite">
+    <test name="EndToEnd">
+        <classes>
+            <class name="com.Pearson.Pages.EndtoEndTest"/>
+        </classes>
+    </test>
+</suite>

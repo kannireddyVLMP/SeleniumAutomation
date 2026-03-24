@@ -3,24 +3,29 @@ package com.Pearson.Pages;
 import com.Pearson.Base.Base;
 import com.Pearson.CommonMethods.CommonMethods;
 import com.Pearson.Screenshot.TakesScreenShot;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class Payment extends Base {
     private WebDriver driver;
     private CommonMethods cm;
     private String screenshotFolder;
 
-    // Locators
-    private By creditCardNumber = By.xpath("//div[contains(text(),'Credit Card Number')]/parent::div/input");
-    private By monthDropdown    = By.xpath("(//select[@class='input ddl'])[1]"); // month
-    private By dateDropdown     = By.xpath("(//select[@class='input ddl'])[2]"); // date
-    private By cvvCode          = By.xpath("//div[@class='title' and contains(text(),'CVV') ]/parent::div/input");
-    private By nameOnCard       = By.xpath("//div[@class='title' and contains(text(),'Name') ]/parent::div/input");
-    private By emailField       = By.xpath("//div[@class='user__name mt-5']//label/following-sibling::input");
-    private By countryField     = By.cssSelector("input[placeholder='Select Country']");
-    private By countryDropdownOptions = By.cssSelector(".ta-results.list-group span");
-    private By placeOrderButton = By.xpath("//a[contains(text(),'Place Order ')]");
+    private static final Logger logger = LogManager.getLogger(Payment.class);
+
+    private final static  By creditCardNumber = By.xpath("//div[contains(text(),'Credit Card Number')]/parent::div/input");
+    private final static By monthDropdown    = By.xpath("(//select[@class='input ddl'])[1]"); // month
+    private final static By dateDropdown     = By.xpath("(//select[@class='input ddl'])[2]"); // date
+    private final static By cvvCode          = By.xpath("//div[@class='title' and contains(text(),'CVV') ]/parent::div/input");
+    private final static By nameOnCard       = By.xpath("//div[@class='title' and contains(text(),'Name') ]/parent::div/input");
+    private final static By emailField       = By.xpath("//div[@class='user__name mt-5']//label/following-sibling::input");
+    private final static By countryField     = By.cssSelector("input[placeholder='Select Country']");
+    private final static By countryDropdownOptions = By.cssSelector(".ta-results.list-group span");
+    private final static By placeOrderButton = By.xpath("//a[contains(text(),'Place Order ')]");
 
     // Constructor
     public Payment(WebDriver driver, String screenshotFolder) {
@@ -59,12 +64,12 @@ public class Payment extends Base {
     }
 
     // Method 2: Validate Shipping Info (email auto-filled)
-    public boolean validateShippingInfo(String loginEmail, String country) throws InterruptedException {
+    public void validateShippingInfo(String loginEmail, String country) throws InterruptedException {
         try {
             logger.info("Validating shipping info...");
             String enteredEmail = CommonMethods.driver.findElement(emailField).getAttribute("value").trim();
-            boolean emailMatches = enteredEmail.equalsIgnoreCase(loginEmail);
-            logger.info("Auto-filled email: " + enteredEmail + " | Expected: " + loginEmail);
+            Assert.assertEquals(enteredEmail.toLowerCase().trim(),loginEmail.toLowerCase().trim());
+             logger.info("Auto-filled email: " + enteredEmail + " | Expected: " + loginEmail);
 
             // Type country letters one by one
             for (char c : country.toCharArray()) {
@@ -82,7 +87,6 @@ public class Payment extends Base {
                 }
             }
 
-            return emailMatches;
 
         } catch (Exception e) {
             String screenshotPath = screenshotFolder + "/shipping_info_failed.png";

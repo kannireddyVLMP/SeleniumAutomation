@@ -3,10 +3,13 @@ package com.Pearson.Pages;
 import com.Pearson.Base.Base;
 import com.Pearson.CommonMethods.CommonMethods;
 import com.Pearson.Screenshot.TakesScreenShot;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage extends Base
+public class Login extends Base
 {
 
 
@@ -14,7 +17,8 @@ public class LoginPage extends Base
    String screenshotFolder;
     CommonMethods cm = new CommonMethods();
 
-    LoginPage(WebDriver driver, String screenshotFolder) {
+    private static final Logger logger = LogManager.getLogger(Login.class);
+    Login(WebDriver driver, String screenshotFolder) {
         this.driver = driver;
         this.screenshotFolder = screenshotFolder;
         CommonMethods.driver = driver;
@@ -40,11 +44,11 @@ public class LoginPage extends Base
 
      public void login() throws InterruptedException {
         try {
-            cm.sendKeys(usernameField, uname, 1000);
+            cm.sendKeys(usernameField, uName, 1000);
             cm.sendKeys(passwordField, pwd, 1000);
             cm.click(loginButton, 1000);
             Thread.sleep(5000);
-            logger.info("Login Successful with username: " + uname);
+            logger.info("Login Successful with username: " + uName);
         } catch (Exception e) {
             // Take screenshot on failure
             String screenshotPath = screenshotFolder + "/login_failed.png";

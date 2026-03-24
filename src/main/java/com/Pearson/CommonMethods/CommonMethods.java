@@ -1,6 +1,7 @@
 package com.Pearson.CommonMethods;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -46,5 +47,17 @@ public class CommonMethods
     }
     public static void clear(By locator) {
         driver.findElement(locator).clear();
+    }
+    public static void jsExec(By locator)
+    {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);",driver.findElement(locator));
+    }
+
+    public static void jsExec(WebElement element, int i)
+    {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);",element);
+
     }
 }
