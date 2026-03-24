@@ -6,10 +6,9 @@ package com.Pearson.Pages;
 import com.Pearson.Base.Base;
 import com.Pearson.CommonMethods.CommonMethods;
 import com.Pearson.Screenshot.TakesScreenShot;
-import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -30,15 +29,15 @@ public class Dashboard extends Base
     WebDriver driver;
     String screenshotFolder;
 
-
+    private static final Logger logger = LogManager.getLogger(Dashboard.class);
 
     // Locators
 
-    private By viewButton = By.xpath(".//button[contains(text(),'View')]");
-    private By addToCartButton = By.xpath(".//button[contains(text(),'Add To Cart')]");
-    private By navHome = By.xpath("//button[contains(text(),'HOME')]");
-    private By navOrders = By.xpath("//button[contains(text(),'ORDERS')]");
-    private By navCart = By.xpath("//ul//button[contains(text(),'Cart')]");
+    private final static  By viewButton = By.xpath(".//button[contains(text(),'View')]");
+    private final static By addToCartButton = By.xpath(".//button[contains(text(),'Add To Cart')]");
+    private final static By navHome = By.xpath("//button[contains(text(),'HOME')]");
+    private  final static By navOrders = By.xpath("//button[contains(text(),'ORDERS')]");
+    private final static By navCart = By.xpath("//ul//button[contains(text(),'Cart')]");
 
 
      Dashboard(WebDriver driver, String screenshotFolder) {
@@ -50,24 +49,25 @@ public class Dashboard extends Base
 
     public void addProductToCart(String productNameToAdd) throws InterruptedException {
         try {
-            List<WebElement> productCards = driver.findElements(By.cssSelector(".card-body"));
+            List<WebElement> productCards = driver.findElements(By.xpath("//div[@class='card']/following::div[@class='card-body']"));
 
             boolean productFound = false;
 
             for (WebElement card : productCards) {
-                String name = card.findElement(By.cssSelector("b")).getText().trim();
+                String name = card.findElement(By.xpath(".//h5//b")).getText().trim();
+                System.out.println("Checking product: " + name);
 
                 if (name.equalsIgnoreCase(productNameToAdd)) {
                     productFound = true;
-
-                    // Click Add To Cart button inside this card
-                    card.findElement(By.xpath(".//button[contains(text(),'Add To Cart')]")).click();
+                    WebElement addBtn = card.findElement(By.xpath(".//button[contains(text(),'Add To Cart')]"));
+                    JavascriptExecutor js = (JavascriptExecutor)driver;
+                    js.executeScript("arguments[0].scrollIntoView(true);",addBtn);// ensure click
+                    addBtn.click();
                     logger.info("Product Added Successfully " + productNameToAdd);
                     Thread.sleep(2000);
                     break;
                 }
             }
-
             if (!productFound) {
                 logger.info("Product Not Found " + productNameToAdd);
                 throw new NoSuchElementException("Product not found: " + productNameToAdd);

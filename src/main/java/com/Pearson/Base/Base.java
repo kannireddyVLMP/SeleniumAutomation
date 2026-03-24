@@ -2,8 +2,9 @@ package com.Pearson.Base;
 
 import com.Pearson.Screenshot.TakesScreenShot;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,7 +13,15 @@ import org.openqa.selenium.edge.EdgeOptions;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import static com.Pearson.CommonMethods.CommonMethods.screenshotFolder;
 
 public class Base
 {
@@ -21,13 +30,13 @@ public class Base
     public static String uName;
     public static String pwd;
 
-   public  static Logger logger = Logger.getLogger(Base.class);
-    static {
-        PropertyConfigurator.configure("src/test/resources/log4j.properties");
-    }
+    private static final Logger logger = LogManager.getLogger(Base.class);
 
-    public static void browserIntialzationAndLauchURL(String screenshotFolder) throws InterruptedException, IOException {
-        com.Pearson.CommonMethods.CommonMethods.screenshotFolder = screenshotFolder;
+    @BeforeClass
+    public  void browserIntialzationAndLauchURL() throws InterruptedException, IOException {
+        String dateStr = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        screenshotFolder =
+                "target/screenshots/EndtoEndTest/" + dateStr;
         prop = new Properties();
         FileInputStream fis = new FileInputStream("src/test/resources/Config.properties");
         prop.load(fis);
@@ -85,9 +94,11 @@ public class Base
         // Keep browser open for 10 seconds to see the result
         Thread.sleep(2000);
     }
-    public static void tearDown()
+    @AfterClass
+    public  void tearDown()
     {
         driver.quit();
+        logger.info("Browser closed successfully.");
     }
 
 
