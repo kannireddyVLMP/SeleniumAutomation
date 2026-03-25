@@ -17,7 +17,7 @@ public class Cart extends Base
     private static final Logger logger = LogManager.getLogger(Cart.class);
     // Locators
     private final static By cartProductName = By.cssSelector(".cartSection h3");
-    private final static  By checkoutButton = By.xpath("//button[contains(text(),'Checkout')]");
+    private final static  By checkoutButton = By.xpath("//buton[contains(text(),'Checkout')]");
     Cart(WebDriver driver)
     {
         this.driver = driver;

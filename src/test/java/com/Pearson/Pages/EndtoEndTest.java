@@ -1,9 +1,13 @@
 package com.Pearson.Pages;
 
 import com.Pearson.Base.Base;
+import com.Pearson.TestData.Excel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import java.util.*;
 
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -16,47 +20,67 @@ import static com.Pearson.Base.Base.*;
 public class EndtoEndTest extends Base
 {
 
- public static String screenshotRunFolder;
+
  private static final Logger logger = LogManager.getLogger(EndtoEndTest.class);
- @Test
- public void E2ETest()
-    {
 
-        try {
 
-            Login lp = new Login(driver);
+
+        @Test(dataProvider = "excelDataProvider")
+        public void E2ETest(int datasetIndex) throws InterruptedException {
+            Map<String, List<HashMap<String, String>>> testData =
+                    Excel.loadWorkbook("src/test/resources/TestData.xlsx");
+
+            Login login = new Login(driver);
+            login.login();
+
             Dashboard dashboard = new Dashboard(driver);
             Cart cart = new Cart(driver);
             Payment payment = new Payment(driver);
             Order order = new Order(driver);
 
-            //login
-            lp.pageTitleValidation();
-            lp.login();
-            String productName = "iphone 13 pro"; // This can be parameterized
-
-            //dashboard
-            dashboard.addProductToCart(productName);
-            dashboard.isCartCountCorrect("1");
+            // Dashboard dataset
+            HashMap<String, String> dashboardRow = testData.get("Dashboard").get(datasetIndex);
+            dashboard.addProductToCart(dashboardRow.get("ProductName"));
+            dashboard.isCartCountCorrect(dashboardRow.get("ExpectedCartCount"));
             dashboard.goToCartPage();
 
-            //cart
-            cart.isProductInCart(productName);
+            // Cart dataset
+            HashMap<String, String> cartRow = testData.get("Cart").get(datasetIndex);
+            cart.isProductInCart(cartRow.get("ProductName"));
             cart.goToCheckout();
 
-            //payment
-            payment.fillPersonalInfo("1234567890987654","12","31",
-                    "274" ,"Sathish Reddy");
-            payment.validateShippingInfo(uName,"India");
+            // Payment dataset
+            HashMap<String, String> paymentRow = testData.get("Payment").get(datasetIndex);
+            payment.fillPersonalInfo(
+                    paymentRow.get("CardNumber"),
+                    paymentRow.get("Month"),
+                    paymentRow.get("Date"),
+                    paymentRow.get("CVV"),
+                    paymentRow.get("Name")
+            );
+            payment.validateShippingInfo(uName, paymentRow.get("Country"));
             payment.placeOrder();
 
-            //order
+            // Order dataset
+            HashMap<String, String> orderRow = testData.get("Order").get(datasetIndex);
             order.CheckOrderConfirmed();
-            order.validateProductName(productName);
-            order.validateProductQty(1);
+            order.validateProductName(orderRow.get("ProductName"));
+            order.validateProductQty(Integer.parseInt(orderRow.get("ExpectedQty")));
+        }
 
-             } catch (Exception e) {
-            System.out.println("Test failed: " + e.getMessage());
+        @DataProvider(name = "excelDataProvider")
+        public Object[][] getData() {
+            Map<String, List<HashMap<String, String>>> testData =
+                    Excel.loadWorkbook("src/test/resources/TestData.xlsx");
+
+            int totalRuns = testData.get("Dashboard").size();
+            Object[][] data = new Object[totalRuns][1];
+
+            for (int i = 0; i < totalRuns; i++) {
+                data[i][0] = i; // datasetIndex
+            }
+            return data;
         }
     }
-}
+
+

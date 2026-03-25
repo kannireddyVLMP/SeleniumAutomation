@@ -1,9 +1,8 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="AutomationSuite">
+<suite name="E2E Suite">
     <listeners>
         <listener class-name="com.Pearson.Utilities.TestListener"/>
     </listeners>
-    <test name="EndToEnd">
+    <test name="E2E Run">
         <classes>
             <class name="com.Pearson.Pages.EndtoEndTest"/>
         </classes>

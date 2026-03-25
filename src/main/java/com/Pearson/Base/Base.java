@@ -15,8 +15,9 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-
+import org.testng.annotations.BeforeMethod;
 
 
 public class Base
@@ -29,7 +30,7 @@ public class Base
     private static final Logger logger = LogManager.getLogger(Base.class);
     public static String screenshotRunFolder = "target/screenshots";
 
-    @BeforeClass
+    @BeforeMethod
     public  void browserIntialzationAndLauchURL() throws InterruptedException, IOException
     {
         prop = new Properties();
@@ -82,7 +83,7 @@ public class Base
         }
         Thread.sleep(2000);
     }
-    @AfterClass
+    @AfterMethod
     public  void tearDown()
     {
         driver.quit();
