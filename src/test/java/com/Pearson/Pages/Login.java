@@ -7,6 +7,11 @@ import org.apache.logging.log4j.Logger;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class Login extends Base
 {
@@ -41,6 +46,8 @@ public class Login extends Base
 
      public void login() throws InterruptedException {
         try {
+
+            cm.webDriverWait(usernameField,5000);
             cm.sendKeys(usernameField, uName, 1000);
             cm.sendKeys(passwordField, pwd, 1000);
             cm.click(loginButton, 1000);

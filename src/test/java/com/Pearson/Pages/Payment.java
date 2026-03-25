@@ -9,6 +9,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import static java.lang.Thread.sleep;
+
 public class Payment extends Base {
     private WebDriver driver;
     private CommonMethods cm;
@@ -36,10 +38,12 @@ public class Payment extends Base {
 
     // Method 1: Fill Personal Info
     public void fillPersonalInfo(String cardNumber, String month, String date,
-                                 String cvv, String name) {
+                                 String cvv, String name) throws InterruptedException {
         try {
             logger.info("Filling personal info...");
             WebElement ele = cm.webDriverWait(creditCardNumber, 5);
+            ele.clear();
+            Thread.sleep(2000);
             ele.sendKeys(cardNumber);
 
             WebElement monthElement = CommonMethods.webDriverWait(monthDropdown, 5);
@@ -72,7 +76,7 @@ public class Payment extends Base {
             // Type country letters one by one
             for (char c : country.toCharArray()) {
                 cm.sendKeys(countryField, String.valueOf(c), 5);
-                Thread.sleep(500);
+                sleep(500);
             }
             logger.info("Typed country letters: " + country);
 
@@ -99,7 +103,7 @@ public class Payment extends Base {
             logger.info("Placing order...");
             WebElement placeOrderBtn = driver.findElement(placeOrderButton);
             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", placeOrderBtn);
-            Thread.sleep(3000);
+            sleep(3000);
             logger.info("Order placed successfully.");
         } catch (Exception e) {
 
