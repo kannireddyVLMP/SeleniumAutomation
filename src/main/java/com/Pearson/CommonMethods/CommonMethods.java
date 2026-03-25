@@ -1,3 +1,4 @@
+
 package com.Pearson.CommonMethods;
 
 import org.openqa.selenium.By;
@@ -11,29 +12,29 @@ import java.time.Duration;
 
 public class CommonMethods
 {
-   public static WebDriver driver;
+    public static WebDriver driver;
 
-   public static void waitForPageLoad() throws InterruptedException {
+    public static void waitForPageLoad() throws InterruptedException {
         Thread.sleep(2000); // Adjust the sleep time as needed
     }
-    public static void sendKeys(By locator, String text, int seconds) {
-        implicitlyWait(seconds);
+    public static void sendKeys(By locator, String text) {
+
         driver.findElement(locator).sendKeys(text);
     }
-    public static void click(By locator,int seconds) {
-        implicitlyWait(seconds);
+    public static void click(By locator) {
+
         driver.findElement(locator).click();
     }
-    public static String getText(By locator,int seconds) {
+    public static String getText(By locator) {
         return driver.findElement(locator).getText();
     }
-    public static boolean isElementDisplayed(By locator,int seconds) {
+    public static boolean isElementDisplayed(By locator) {
         return driver.findElement(locator).isDisplayed();
     }
-    public static boolean isElementEnabled(By locator, int seconds)
+    public static boolean isElementEnabled(By locator)
     {
-       implicitlyWait(seconds);
-       return driver.findElement(locator).isEnabled();
+
+        return driver.findElement(locator).isEnabled();
     }
     public static void implicitlyWait(int seconds) {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));

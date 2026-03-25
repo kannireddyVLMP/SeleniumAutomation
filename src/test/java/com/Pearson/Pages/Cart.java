@@ -4,10 +4,14 @@ import com.Pearson.Base.Base;
 import com.Pearson.CommonMethods.CommonMethods;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import java.time.Duration;
+
+import static com.Pearson.CommonMethods.CommonMethods.click;
 
 public class Cart extends Base
 {
@@ -17,7 +21,7 @@ public class Cart extends Base
     private static final Logger logger = LogManager.getLogger(Cart.class);
     // Locators
     private final static By cartProductName = By.cssSelector(".cartSection h3");
-    private final static  By checkoutButton = By.xpath("//buton[contains(text(),'Checkout')]");
+    private final static  By checkoutButton = By.xpath("//button[contains(text(),'Checkout')]");
     Cart(WebDriver driver)
     {
         this.driver = driver;
@@ -43,7 +47,16 @@ public class Cart extends Base
     public void goToCheckout() throws InterruptedException
     {
 
-        CommonMethods.click(checkoutButton, 1000);
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.elementToBeClickable(checkoutButton));
+             CommonMethods.click(checkoutButton);
+        } catch (ElementClickInterceptedException e) {
+            logger.warn("Click intercepted, using JS click");
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", checkoutButton);
+        }
+
         Thread.sleep(2000);
          logger.info("Navigated to Payment Page.");
 

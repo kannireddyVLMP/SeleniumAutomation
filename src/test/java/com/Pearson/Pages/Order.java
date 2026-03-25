@@ -26,8 +26,6 @@ public class Order extends Base
 
     public Order(WebDriver driver) {
         this.driver = driver;
-        this.cm = new CommonMethods();
-        CommonMethods.driver = driver;
 
     }
 
@@ -35,7 +33,7 @@ public class Order extends Base
     public void CheckOrderConfirmed() {
         try {
             logger.info("Validating order confirmation message...");
-            String message = cm.getText(confirmationMessage, 5).trim();
+            String message = cm.getText(confirmationMessage).trim();
             logger.info("Confirmation message found: " + message);
             Assert.assertEquals(message,"THANKYOU FOR THE ORDER.");
         } catch (Exception e) {
@@ -51,7 +49,7 @@ public class Order extends Base
             logger.info("Validating product name on order page...");
              By productName = By.xpath("//div[@class='title' and contains(text(),'"+expectedProduct+"')]");   // adjust if table structure differs
 
-            String actualProduct = cm.getText(productName, 5).trim();
+            String actualProduct = cm.getText(productName).trim();
             logger.info("Product name found: " + actualProduct + " | Expected: " + expectedProduct);
             Assert.assertEquals(actualProduct,expectedProduct);
         } catch (Exception e) {
@@ -68,7 +66,7 @@ public class Order extends Base
 
              By productQty  = By.xpath("//div[@class='sub' and contains(text(),'1')]");   // adjust if table structure differs
 
-            String qyText = cm.getText(productQty, 5).replace("Qty:", "").trim();
+            String qyText = cm.getText(productQty).replace("Qty:", "").trim();
             int actualQty = Integer.parseInt(qyText);
             logger.info("Product quantity found: " + actualQty + " | Expected: " + expectedQty);
             Assert.assertEquals(actualQty,expectedQty);

@@ -4,6 +4,7 @@ import com.Pearson.Base.Base;
 import com.Pearson.TestData.Excel;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.apache.logging.log4j.LogManager;
@@ -21,6 +22,11 @@ public class TestListener implements ITestListener {
     private static final Logger logger = LogManager.getLogger(TestListener.class);
     public static String screenshotFolder = "target/screenshots/com.Pearson.Pages.EndtoEndTest/";
 
+    @Override
+    public void onStart(ITestContext context) {
+        Excel.clearResults();
+        logger.info("Previous results cleared.");
+    }
 
     @Override
     public void onTestFailure(ITestResult result) {
@@ -33,9 +39,15 @@ public class TestListener implements ITestListener {
             new File(folderPath).mkdirs();
             TakesScreenShot.takeScreenshot(Base.driver, screenshotPath);
             logger.info("Screenshot captured on failure: " + screenshotPath);
-            Excel.updateResult(result.getMethod().getMethodName(), stepName, IndexedColors.RED);
-
-        } catch (Exception e) {
+            Excel.updateResult(
+                    "Results",
+                    result.getMethod().getMethodName(),
+                    stepName,
+                    "FAIL",
+                    IndexedColors.RED
+            );
+        }
+        catch (Exception e) {
             logger.error("Failed to capture screenshot on test failure: ", e);
         }
     }
@@ -44,13 +56,27 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         logger.info("Test Passed: " + result.getMethod().getMethodName());
-        Excel.updateResult(result.getMethod().getMethodName(), "CompletedFlow", IndexedColors.GREEN);
+        Excel.updateResult(
+                "Results",
+                result.getMethod().getMethodName(),   // TestCaseName
+                "Completed Execution",                          // StepName (you can customize)
+                "PASS",                               // Status
+                IndexedColors.GREEN                   // Color
+        );
+        System.out.println("Test Passed: " + result.getMethod().getMethodName());
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
         logger.warn("Test Skipped: " + result.getMethod().getMethodName());
-        Excel.updateResult(result.getMethod().getMethodName(), "SkippedFlow", IndexedColors.YELLOW);
+        Excel.updateResult(
+                "Results",
+                result.getMethod().getMethodName(),
+                "Skipped Execution",
+                "SKIP",
+                IndexedColors.YELLOW
+        );
+        System.out.println("Test Skipped: " + result.getMethod().getMethodName());
     }
 }
 

@@ -31,8 +31,7 @@ public class Payment extends Base {
     // Constructor
     public Payment(WebDriver driver) {
         this.driver = driver;
-        this.cm = new CommonMethods();
-        CommonMethods.driver = driver;
+
 
     }
 
@@ -54,8 +53,8 @@ public class Payment extends Base {
             new Select(dateElement).selectByVisibleText(date);
             logger.info("Selected expiry date: " + date);
 
-            cm.sendKeys(cvvCode, cvv, 5);
-            cm.sendKeys(nameOnCard, name, 5);
+            cm.sendKeys(cvvCode, cvv);
+            cm.sendKeys(nameOnCard, name);
             logger.info("Personal info filled successfully.");
 
         } catch (Exception e) {
@@ -75,7 +74,7 @@ public class Payment extends Base {
 
             // Type country letters one by one
             for (char c : country.toCharArray()) {
-                cm.sendKeys(countryField, String.valueOf(c), 5);
+                cm.sendKeys(countryField, String.valueOf(c));
                 sleep(500);
             }
             logger.info("Typed country letters: " + country);

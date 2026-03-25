@@ -8,6 +8,7 @@ import com.Pearson.CommonMethods.CommonMethods;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -21,10 +22,7 @@ import static com.Pearson.CommonMethods.CommonMethods.webDriverWait;
 
 public class Dashboard extends Base
 {
-    CommonMethods cm = new CommonMethods();
     WebDriver driver;
-
-
     private static final Logger logger = LogManager.getLogger(Dashboard.class);
 
     // Locators
@@ -38,7 +36,7 @@ public class Dashboard extends Base
 
      Dashboard(WebDriver driver) {
         this.driver = driver;
-        CommonMethods.driver = driver;
+
     }
 
 
@@ -49,20 +47,35 @@ public class Dashboard extends Base
             boolean productFound = false;
 
             for (WebElement card : productCards) {
-                String name = card.findElement(By.xpath(".//h5//b")).getText().trim();
-                System.out.println("Checking product: " + name);
+                String rawName = card.findElement(By.xpath(".//h5/b")).getText();
 
-                if (name.equalsIgnoreCase(productNameToAdd)) {
+        // Clean up: remove price suffix and normalize spaces
+                String name = rawName.split("==")[0].trim().replaceAll("\\s+", " ").toLowerCase();
+                System.out.println("Checking product: " + name);
+                String target = productNameToAdd.trim().replaceAll("\\s+", " ").toLowerCase();
+
+                System.out.println("Comparing: [" + name + "] with [" + target + "]");
+                if (name.equals(target)) {
                     productFound = true;
                     WebElement addBtn = card.findElement(By.xpath(".//button[contains(text(),'Add To Cart')]"));
-                    JavascriptExecutor js = (JavascriptExecutor)driver;
-                    js.executeScript("arguments[0].scrollIntoView(true);",addBtn);// ensure click
-                    addBtn.click();
+                    try {
+                        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                        wait.until(ExpectedConditions.elementToBeClickable(addBtn));
+                        JavascriptExecutor js = (JavascriptExecutor) driver;
+                        js.executeScript("arguments[0].scrollIntoView(true);", addBtn);
+                        addBtn.click();
+                    } catch (ElementClickInterceptedException e) {
+                        logger.warn("Click intercepted, using JS click");
+                        JavascriptExecutor js = (JavascriptExecutor) driver;
+                        js.executeScript("arguments[0].scrollIntoView(true);", addBtn);
+
+                        js.executeScript("arguments[0].click();", addBtn);
+                    }
                     logger.info("Product Added Successfully " + productNameToAdd);
                     Thread.sleep(2000);
                     break;
                 }
-            }
+           }
             if (!productFound) {
                 logger.info("Product Not Found " + productNameToAdd);
                 throw new NoSuchElementException("Product not found: " + productNameToAdd);
@@ -117,8 +130,16 @@ public class Dashboard extends Base
         public void goToCartPage() throws InterruptedException {
             try
             {
-                cm.click(navCart, 10);
+                Actions a = new Actions(driver);
+                a.moveToElement(driver.findElement(By.xpath("//ul//button[contains(text(),'Cart')]"))).build().perform();
+
+                Thread.sleep(1000);
+                WebElement cartBtn = driver.findElement(By.xpath("//ul//button[contains(text(),'Cart')]"));
+                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", cartBtn);
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cartBtn);
+
                 logger.info("Navigated to Cart Page Successfully");
+
                 Thread.sleep(2000);
             }
             catch (Exception e)
