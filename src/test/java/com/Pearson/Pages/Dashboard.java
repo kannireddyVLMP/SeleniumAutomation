@@ -5,7 +5,6 @@ package com.Pearson.Pages;
 
 import com.Pearson.Base.Base;
 import com.Pearson.CommonMethods.CommonMethods;
-import com.Pearson.Screenshot.TakesScreenShot;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
@@ -17,9 +16,6 @@ import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import static com.Pearson.Base.Base.*;
-import static com.Pearson.Base.Base.driver;
-import static com.Pearson.CommonMethods.CommonMethods.screenshotFolder;
 import static com.Pearson.CommonMethods.CommonMethods.webDriverWait;
 
 
@@ -27,7 +23,7 @@ public class Dashboard extends Base
 {
     CommonMethods cm = new CommonMethods();
     WebDriver driver;
-    String screenshotFolder;
+
 
     private static final Logger logger = LogManager.getLogger(Dashboard.class);
 
@@ -40,9 +36,8 @@ public class Dashboard extends Base
     private final static By navCart = By.xpath("//ul//button[contains(text(),'Cart')]");
 
 
-     Dashboard(WebDriver driver, String screenshotFolder) {
+     Dashboard(WebDriver driver) {
         this.driver = driver;
-        this.screenshotFolder = screenshotFolder;
         CommonMethods.driver = driver;
     }
 
@@ -77,9 +72,7 @@ public class Dashboard extends Base
         {
             // Take screenshot on failure
             logger.error("Error adding product to cart: " + e.getMessage());
-            String screenshotPath = screenshotFolder + "/addProducToCart_failed.png";
-            TakesScreenShot.takeScreenshot(driver, screenshotPath);
-            System.out.println("Screenshot saved (failure): " + screenshotPath);
+
             throw e;
 
         }
@@ -98,9 +91,8 @@ public class Dashboard extends Base
         {
               // Take screenshot on failure
                 logger.error("Error adding product to cart: " + e.getMessage());
-                String screenshotPath = screenshotFolder + "/addProducToCart_failed.png";
-                TakesScreenShot.takeScreenshot(driver, screenshotPath);
-                System.out.println("Screenshot saved (failure): " + screenshotPath);
+
+
                 Assert.fail("Toast message is not displayed: " + e.getMessage());
 
 
@@ -118,9 +110,7 @@ public class Dashboard extends Base
         } catch (NoSuchElementException e) {
             // Take screenshot on failure
             logger.error("Cart count is not correct: " + e.getMessage());
-            String screenshotPath = screenshotFolder + "/cartCount_failed.png";
-            TakesScreenShot.takeScreenshot(driver, screenshotPath);
-            System.out.println("Screenshot saved (failure): " + screenshotPath);
+
             Assert.fail("Cart count is not correct: " + e.getMessage());
         }
     }
@@ -135,10 +125,7 @@ public class Dashboard extends Base
             {
                 // Take screenshot on failure
                 logger.error("Error navigating to cart page: " + e.getMessage());
-                String screenshotPath = screenshotFolder + "/navigateToCart_failed.png";
-                TakesScreenShot.takeScreenshot(driver, screenshotPath);
-                System.out.println("Screenshot saved (failure): " + screenshotPath);
-                throw e;
+                 throw e;
             }
         }
 

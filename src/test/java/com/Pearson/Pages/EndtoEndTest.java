@@ -12,48 +12,51 @@ import java.util.Date;
 
 import static com.Pearson.Base.Base.*;
 
-@Test
-public class EndtoEndTest extends Base{
-    public static String screenshotRunFolder;
 
-    private static final Logger logger = LogManager.getLogger(EndtoEndTest.class);
+public class EndtoEndTest extends Base
+{
 
-    public void EndToEndtest()
+ public static String screenshotRunFolder;
+ private static final Logger logger = LogManager.getLogger(EndtoEndTest.class);
+ @Test
+ public void E2ETest()
     {
-        String dateStr = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        screenshotRunFolder = "target/screenshots/com.Pearson.Pages.EndtoEndTest/" + dateStr;
-        new java.io.File(screenshotRunFolder).mkdirs();
+
         try {
 
-            Login lp = new Login(driver, screenshotRunFolder);
+            Login lp = new Login(driver);
+            Dashboard dashboard = new Dashboard(driver);
+            Cart cart = new Cart(driver);
+            Payment payment = new Payment(driver);
+            Order order = new Order(driver);
+
+            //login
             lp.pageTitleValidation();
             lp.login();
-            Dashboard dashboard = new Dashboard(driver,screenshotRunFolder);
             String productName = "iphone 13 pro"; // This can be parameterized
 
+            //dashboard
             dashboard.addProductToCart(productName);
-
-            //Assert.assertTrue(dashboard.isProductAddedToastDisplayed(), "Product added toast not displayed!");
-           dashboard.isCartCountCorrect("1");
+            dashboard.isCartCountCorrect("1");
             dashboard.goToCartPage();
-            Cart cart = new Cart(driver, screenshotRunFolder);
+
+            //cart
             cart.isProductInCart(productName);
             cart.goToCheckout();
-            Payment payment = new Payment(driver, screenshotRunFolder);
+
+            //payment
             payment.fillPersonalInfo("1234567890987654","12","31",
                     "274" ,"Sathish Reddy");
-
             payment.validateShippingInfo(uName,"India");
             payment.placeOrder();
-            Order order = new Order(driver, screenshotRunFolder);
+
+            //order
             order.CheckOrderConfirmed();
             order.validateProductName(productName);
             order.validateProductQty(1);
 
-            // If you want to combine screenshots, call the combiner here, or let a utility handle it.
-        } catch (Exception e) {
+             } catch (Exception e) {
             System.out.println("Test failed: " + e.getMessage());
-        } finally {// ...existing code...
         }
     }
 }

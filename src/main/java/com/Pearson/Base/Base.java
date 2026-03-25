@@ -1,6 +1,5 @@
 package com.Pearson.Base;
 
-import com.Pearson.Screenshot.TakesScreenShot;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,15 +12,12 @@ import org.openqa.selenium.edge.EdgeOptions;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Properties;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
-import static com.Pearson.CommonMethods.CommonMethods.screenshotFolder;
+
 
 public class Base
 {
@@ -31,15 +27,15 @@ public class Base
     public static String pwd;
 
     private static final Logger logger = LogManager.getLogger(Base.class);
+    public static String screenshotRunFolder = "target/screenshots";
 
     @BeforeClass
-    public  void browserIntialzationAndLauchURL() throws InterruptedException, IOException {
-        String dateStr = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        screenshotFolder =
-                "target/screenshots/EndtoEndTest/" + dateStr;
+    public  void browserIntialzationAndLauchURL() throws InterruptedException, IOException
+    {
         prop = new Properties();
         FileInputStream fis = new FileInputStream("src/test/resources/Config.properties");
         prop.load(fis);
+
         //env = System.getProperty("env","QA");
         String browser = prop.getProperty("Browser");
         String url = prop.getProperty("URL");
@@ -81,17 +77,9 @@ public class Base
             logger.info("Page loaded successfully!");
             logger.info("Current URL: " + driver.getCurrentUrl());
         } catch (Exception e) {
-            String screenshotPath = screenshotFolder + "/driver_get_failed_" + System.currentTimeMillis() + ".png";
-            TakesScreenShot.takeScreenshot(driver, screenshotPath);
-            logger.error("driver.get() failed. Screenshot: " + screenshotPath, e);
+            logger.error("driver.get() failed. Error: " + e.getMessage());
             throw e;
         }
-        // Take screenshot after loading URL in the provided folder
-        String screenshotPath = screenshotFolder + "/initial_page.png";
-        TakesScreenShot.takeScreenshot(driver, screenshotPath);
-        logger.info("Screenshot saved: " + screenshotPath);
-
-        // Keep browser open for 10 seconds to see the result
         Thread.sleep(2000);
     }
     @AfterClass

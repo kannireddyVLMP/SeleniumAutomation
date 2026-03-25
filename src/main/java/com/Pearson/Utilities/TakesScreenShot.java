@@ -1,4 +1,4 @@
-package com.Pearson.Screenshot;
+package com.Pearson.Utilities;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

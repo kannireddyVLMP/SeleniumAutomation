@@ -11,17 +11,17 @@ import org.testng.Assert;
 
 public class Cart extends Base
 {
-    CommonMethods cm = new CommonMethods();
+
     WebDriver driver;
     String screenshotFolder;
     private static final Logger logger = LogManager.getLogger(Cart.class);
     // Locators
     private final static By cartProductName = By.cssSelector(".cartSection h3");
     private final static  By checkoutButton = By.xpath("//button[contains(text(),'Checkout')]");
-    Cart(WebDriver driver, String screenshotFolder)
+    Cart(WebDriver driver)
     {
         this.driver = driver;
-        this.screenshotFolder = screenshotFolder;
+
         CommonMethods.driver = driver;
     }
 
@@ -43,7 +43,7 @@ public class Cart extends Base
     public void goToCheckout() throws InterruptedException
     {
 
-        cm.click(checkoutButton, 1000);
+        CommonMethods.click(checkoutButton, 1000);
         Thread.sleep(2000);
          logger.info("Navigated to Payment Page.");
 

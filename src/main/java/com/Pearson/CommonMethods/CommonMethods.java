@@ -12,7 +12,7 @@ import java.time.Duration;
 public class CommonMethods
 {
    public static WebDriver driver;
-   public static String screenshotFolder;
+
    public static void waitForPageLoad() throws InterruptedException {
         Thread.sleep(2000); // Adjust the sleep time as needed
     }

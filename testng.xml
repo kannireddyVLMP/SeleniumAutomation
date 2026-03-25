@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="AutomationSuite">
+    <listeners>
+        <listener class-name="com.Pearson.Utilities.TestListener"/>
+    </listeners>
     <test name="EndToEnd">
         <classes>
             <class name="com.Pearson.Pages.EndtoEndTest"/>
