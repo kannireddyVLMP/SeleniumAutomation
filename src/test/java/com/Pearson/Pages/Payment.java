@@ -2,7 +2,6 @@ package com.Pearson.Pages;
 
 import com.Pearson.Base.Base;
 import com.Pearson.CommonMethods.CommonMethods;
-import com.Pearson.Screenshot.TakesScreenShot;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -13,7 +12,7 @@ import org.testng.Assert;
 public class Payment extends Base {
     private WebDriver driver;
     private CommonMethods cm;
-    private String screenshotFolder;
+
 
     private static final Logger logger = LogManager.getLogger(Payment.class);
 
@@ -28,11 +27,11 @@ public class Payment extends Base {
     private final static By placeOrderButton = By.xpath("//a[contains(text(),'Place Order ')]");
 
     // Constructor
-    public Payment(WebDriver driver, String screenshotFolder) {
+    public Payment(WebDriver driver) {
         this.driver = driver;
         this.cm = new CommonMethods();
         CommonMethods.driver = driver;
-        this.screenshotFolder = screenshotFolder;
+
     }
 
     // Method 1: Fill Personal Info
@@ -56,9 +55,8 @@ public class Payment extends Base {
             logger.info("Personal info filled successfully.");
 
         } catch (Exception e) {
-            String screenshotPath = screenshotFolder + "/personal_info_failed.png";
-            TakesScreenShot.takeScreenshot(driver, screenshotPath);
-            logger.error("Personal info failed. Screenshot saved: " + screenshotPath, e);
+
+            logger.error("Personal info failed. Screenshot saved: " + e.getMessage(), e);
             throw e;
         }
     }
@@ -89,9 +87,8 @@ public class Payment extends Base {
 
 
         } catch (Exception e) {
-            String screenshotPath = screenshotFolder + "/shipping_info_failed.png";
-            TakesScreenShot.takeScreenshot(driver, screenshotPath);
-            logger.error("Shipping info failed. Screenshot saved: " + screenshotPath, e);
+
+            logger.info("Shipping info validation failed. Screenshot saved: " + e.getMessage(), e);
             throw e;
         }
     }
@@ -105,9 +102,8 @@ public class Payment extends Base {
             Thread.sleep(3000);
             logger.info("Order placed successfully.");
         } catch (Exception e) {
-            String screenshotPath = screenshotFolder + "/place_order_failed.png";
-            TakesScreenShot.takeScreenshot(driver, screenshotPath);
-            logger.error("Place order failed. Screenshot saved: " + screenshotPath, e);
+
+            logger.info("Placing order failed. "+ e.getMessage(), e);
             throw e;
         }
     }

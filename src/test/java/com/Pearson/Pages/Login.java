@@ -2,7 +2,6 @@ package com.Pearson.Pages;
 
 import com.Pearson.Base.Base;
 import com.Pearson.CommonMethods.CommonMethods;
-import com.Pearson.Screenshot.TakesScreenShot;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,13 +13,13 @@ public class Login extends Base
 
 
    WebDriver driver;
-   String screenshotFolder;
+
     CommonMethods cm = new CommonMethods();
 
     private static final Logger logger = LogManager.getLogger(Login.class);
-    Login(WebDriver driver, String screenshotFolder) {
+    Login(WebDriver driver) {
         this.driver = driver;
-        this.screenshotFolder = screenshotFolder;
+
         CommonMethods.driver = driver;
     }
 
@@ -33,11 +32,9 @@ public class Login extends Base
             String expectedTitle = "Let's Shop";
             String actualTitle = driver.getTitle();
             return actualTitle.equals(expectedTitle);
-        } catch (Exception e) {
-            // Take screenshot on failure
-            String screenshotPath = screenshotFolder + "/page_title_validation_failed.png";
-            TakesScreenShot.takeScreenshot(driver, screenshotPath);
-            System.out.println("Screenshot saved (failure): " + screenshotPath);
+        }
+        catch (Exception e) {
+            logger.info("Page title validation failed. Expected: " + "Let's Shop" + ", Actual: " + driver.getTitle());
             throw e;
         }
     }
@@ -51,9 +48,7 @@ public class Login extends Base
             logger.info("Login Successful with username: " + uName);
         } catch (Exception e) {
             // Take screenshot on failure
-            String screenshotPath = screenshotFolder + "/login_failed.png";
-            TakesScreenShot.takeScreenshot(driver, screenshotPath);
-            System.out.println("Screenshot saved (failure): " + screenshotPath);
+            logger.error("Login failed: " + e.getMessage());
             throw e;
         }
     }

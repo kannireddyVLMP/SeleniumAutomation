@@ -2,7 +2,8 @@ package com.Pearson.Pages;
 
 import com.Pearson.Base.Base;
 import com.Pearson.CommonMethods.CommonMethods;
-import com.Pearson.Screenshot.TakesScreenShot;
+import com.Pearson.Utilities.FailureContext;
+import com.Pearson.Utilities.TakesScreenShot;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -10,20 +11,24 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Order extends Base
 {
     private WebDriver driver;
     private CommonMethods cm;
-    private String screenshotFolder;
+
     private static final Logger logger = LogManager.getLogger(Order.class);
     // Locators
     private By confirmationMessage = By.xpath("//h1[normalize-space()='Thankyou for the order.']");
 
-    public Order(WebDriver driver, String screenshotFolder) {
+    public Order(WebDriver driver) {
         this.driver = driver;
         this.cm = new CommonMethods();
         CommonMethods.driver = driver;
-        this.screenshotFolder = screenshotFolder;
+
     }
 
     // Validate confirmation message
@@ -34,9 +39,8 @@ public class Order extends Base
             logger.info("Confirmation message found: " + message);
             Assert.assertEquals(message,"THANKYOU FOR THE ORDER.");
         } catch (Exception e) {
-            String screenshotPath = screenshotFolder + "/order_confirmation_failed.png";
-            TakesScreenShot.takeScreenshot(driver, screenshotPath);
-            logger.error("Order confirmation validation failed. Screenshot saved: " + screenshotPath, e);
+
+            logger.error("Order confirmation validation failed.  " + e);
             throw e;
         }
     }
@@ -51,9 +55,8 @@ public class Order extends Base
             logger.info("Product name found: " + actualProduct + " | Expected: " + expectedProduct);
             Assert.assertEquals(actualProduct,expectedProduct);
         } catch (Exception e) {
-            String screenshotPath = screenshotFolder + "/product_name_failed.png";
-            TakesScreenShot.takeScreenshot(driver, screenshotPath);
-            logger.error("Product name validation failed. Screenshot saved: " + screenshotPath, e);
+
+            logger.error("Product name validation failed. Screenshot saved: " + e);
             throw e;
         }
     }
@@ -69,10 +72,21 @@ public class Order extends Base
             int actualQty = Integer.parseInt(qyText);
             logger.info("Product quantity found: " + actualQty + " | Expected: " + expectedQty);
             Assert.assertEquals(actualQty,expectedQty);
+            String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+
+            // Get failure location dynamically from stack trace
+
+
+            // Build screenshot path
+            String screenshotPath = Base.screenshotRunFolder + "/CompleteOrder" + timestamp +".png";
+
+            // Ensure directory exists
+
+
+            TakesScreenShot.takeScreenshot(Base.driver, screenshotPath);
         } catch (Exception e) {
-            String screenshotPath = screenshotFolder + "/product_qty_failed.png";
-            TakesScreenShot.takeScreenshot(driver, screenshotPath);
-            logger.error("Product quantity validation failed. Screenshot saved: " + screenshotPath, e);
+
+            logger.error("Product quantity validation failed. "+e);
             throw e;
         }
     }
