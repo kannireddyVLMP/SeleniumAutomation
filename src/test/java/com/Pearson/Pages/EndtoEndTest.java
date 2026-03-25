@@ -68,19 +68,64 @@ public class EndtoEndTest extends Base
             order.validateProductQty(Integer.parseInt(orderRow.get("ExpectedQty")));
         }
 
-        @DataProvider(name = "excelDataProvider")
-        public Object[][] getData() {
-            Map<String, List<HashMap<String, String>>> testData =
-                    Excel.loadWorkbook("src/test/resources/TestData.xlsx");
+    @DataProvider(name = "excelDataProvider")
+    public Object[][] getData() {
+        Map<String, List<HashMap<String, String>>> testData =
+                Excel.loadWorkbook("src/test/resources/TestData.xlsx");
 
-            int totalRuns = testData.get("Dashboard").size();
-            Object[][] data = new Object[totalRuns][1];
+        List<HashMap<String, String>> dashboardData = testData.get("Dashboard");
+        List<Object[]> filtered = new ArrayList<Object[]>();
 
-            for (int i = 0; i < totalRuns; i++) {
-                data[i][0] = i; // datasetIndex
+        // Read target index dynamically (system property or default to all)
+        String indexProp = System.getProperty("datasetIndex"); // e.g. mvn test -DdatasetIndex=2
+
+        if (indexProp != null && !indexProp.trim().isEmpty()) {
+            int targetIndex = Integer.parseInt(indexProp.trim());
+
+            if (targetIndex >= 0 && targetIndex < dashboardData.size()) {
+                HashMap<String, String> row = dashboardData.get(targetIndex);
+
+                if (row != null && !row.isEmpty()) {
+                    boolean hasNonEmptyValue = false;
+                    for (String val : row.values()) {
+                        if (val != null && val.trim().length() > 0) {
+                            hasNonEmptyValue = true;
+                            break;
+                        }
+                    }
+                    if (hasNonEmptyValue) {
+                        filtered.add(new Object[]{targetIndex});
+                    }
+                }
             }
-            return data;
+        } else {
+            // No datasetIndex specified → run all valid rows
+            for (int i = 0; i < dashboardData.size(); i++) {
+                HashMap<String, String> row = dashboardData.get(i);
+
+                if (row != null && !row.isEmpty()) {
+                    boolean hasNonEmptyValue = false;
+                    for (String val : row.values()) {
+                        if (val != null && val.trim().length() > 0) {
+                            hasNonEmptyValue = true;
+                            break;
+                        }
+                    }
+                    if (hasNonEmptyValue) {
+                        filtered.add(new Object[]{i});
+                    }
+                }
+            }
         }
+
+        Object[][] data = new Object[filtered.size()][1];
+        for (int i = 0; i < filtered.size(); i++) {
+            data[i][0] = filtered.get(i)[0];
+        }
+
+        return data;
     }
+
+}
 
 

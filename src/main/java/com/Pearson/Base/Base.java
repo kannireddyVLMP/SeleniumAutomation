@@ -65,23 +65,12 @@ public class Base
                 logger.error("Browser not supported, please check the configuration.");
         }
 
-        if(url == null|| uName == null || pwd == null)
-        {
-            logger.error("No URL or credentials found for env");
-            throw new RuntimeException("No URL found for env: ");
-        }
-        //loadConfig();
-        logger.info("Loading URL: " + url);
 
-        try {
+
             driver.get(url);
             logger.info("Page loaded successfully!");
             logger.info("Current URL: " + driver.getCurrentUrl());
-        } catch (Exception e) {
-            logger.error("driver.get() failed. Error: " + e.getMessage());
-            throw e;
-        }
-        Thread.sleep(2000);
+
     }
     @AfterMethod
     public  void tearDown()
