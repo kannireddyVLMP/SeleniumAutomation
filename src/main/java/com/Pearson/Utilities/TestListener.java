@@ -12,9 +12,12 @@ import org.apache.logging.log4j.Logger;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import com.Pearson.Utilities.FailureContext;
+
+import static com.Pearson.TestData.Excel.*;
 import static org.testng.internal.invokers.ITestInvoker.*;
 
 public class TestListener implements ITestListener {
@@ -24,7 +27,7 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-        Excel.clearResults();
+        clearResults();
         logger.info("Previous results cleared.");
     }
 
