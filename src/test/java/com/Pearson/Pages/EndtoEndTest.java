@@ -25,67 +25,74 @@ public class EndtoEndTest extends Base
 
 
 
-        @Test(dataProvider = "excelDataProvider")
-        public void E2ETest(int datasetIndex) throws InterruptedException {
-            Map<String, List<HashMap<String, String>>> testData =
-                    Excel.loadWorkbook("src/test/resources/TestData.xlsx");
+    @Test(dataProvider = "excelDataProvider")
+    public void E2ETest(String testCaseName) throws InterruptedException {
 
-            Login login = new Login(driver);
-            login.login();
+        Map<String, List<HashMap<String, String>>> testData =
+                Excel.loadWorkbook("src/test/resources/TestData.xlsx");
 
-            Dashboard dashboard = new Dashboard(driver);
-            Cart cart = new Cart(driver);
-            Payment payment = new Payment(driver);
-            Order order = new Order(driver);
+        Login login = new Login(driver);
+        login.login();
 
-            // Dashboard dataset
-            HashMap<String, String> dashboardRow = testData.get("Dashboard").get(datasetIndex);
-            dashboard.addProductToCart(dashboardRow.get("ProductName"));
-            dashboard.isCartCountCorrect(dashboardRow.get("ExpectedCartCount"));
-            dashboard.goToCartPage();
+        Dashboard dashboard = new Dashboard(driver);
+        Cart cart = new Cart(driver);
+        Payment payment = new Payment(driver);
+        Order order = new Order(driver);
 
-            // Cart dataset
-            HashMap<String, String> cartRow = testData.get("Cart").get(datasetIndex);
-            cart.isProductInCart(cartRow.get("ProductName"));
-            cart.goToCheckout();
+        System.out.println("Running TestCase: " + testCaseName);
 
-            // Payment dataset
-            HashMap<String, String> paymentRow = testData.get("Payment").get(datasetIndex);
-            payment.fillPersonalInfo(
-                    paymentRow.get("CardNumber"),
-                    paymentRow.get("Month"),
-                    paymentRow.get("Date"),
-                    paymentRow.get("CVV"),
-                    paymentRow.get("Name")
-            );
-            payment.validateShippingInfo(uName, paymentRow.get("Country"));
-            payment.placeOrder();
+        // 🔥 Fetch rows using helper
+        HashMap<String, String> dashboardRow = getRow(testData.get("Dashboard"), testCaseName);
+        HashMap<String, String> cartRow = getRow(testData.get("Cart"), testCaseName);
+        HashMap<String, String> paymentRow = getRow(testData.get("Payment"), testCaseName);
+        HashMap<String, String> orderRow = getRow(testData.get("Order"), testCaseName);
 
-            // Order dataset
-            HashMap<String, String> orderRow = testData.get("Order").get(datasetIndex);
-            order.CheckOrderConfirmed();
-            order.validateProductName(orderRow.get("ProductName"));
-            order.validateProductQty(Integer.parseInt(orderRow.get("ExpectedQty")));
-        }
+        // Dashboard
+        dashboard.addProductToCart(dashboardRow.get("ProductName"));
+        dashboard.isCartCountCorrect(dashboardRow.get("ExpectedCartCount"));
+        dashboard.goToCartPage();
 
+        // Cart
+        cart.isProductInCart(cartRow.get("ProductName"));
+        cart.goToCheckout();
+
+        // Payment
+        payment.fillPersonalInfo(
+                paymentRow.get("CardNumber"),
+                paymentRow.get("Month"),
+                paymentRow.get("Date"),
+                paymentRow.get("CVV"),
+                paymentRow.get("Name")
+        );
+        payment.validateShippingInfo(uName, paymentRow.get("Country"));
+        payment.placeOrder();
+
+        // Order
+        order.CheckOrderConfirmed();
+        order.validateProductName(orderRow.get("ProductName"));
+        order.validateProductQty(Integer.parseInt(orderRow.get("ExpectedQty")));
+    }
     @DataProvider(name = "excelDataProvider")
     public Object[][] getData() {
+
         Map<String, List<HashMap<String, String>>> testData =
                 Excel.loadWorkbook("src/test/resources/TestData.xlsx");
 
         List<HashMap<String, String>> dashboardData = testData.get("Dashboard");
         List<Object[]> filtered = new ArrayList<Object[]>();
 
-        // Read target index dynamically (system property or default to all)
-        String indexProp = System.getProperty("datasetIndex"); // e.g. mvn test -DdatasetIndex=2
+        String indexProp = System.getProperty("datasetIndex");
 
         if (indexProp != null && !indexProp.trim().isEmpty()) {
+
             int targetIndex = Integer.parseInt(indexProp.trim());
 
             if (targetIndex >= 0 && targetIndex < dashboardData.size()) {
+
                 HashMap<String, String> row = dashboardData.get(targetIndex);
 
                 if (row != null && !row.isEmpty()) {
+
                     boolean hasNonEmptyValue = false;
                     for (String val : row.values()) {
                         if (val != null && val.trim().length() > 0) {
@@ -93,17 +100,22 @@ public class EndtoEndTest extends Base
                             break;
                         }
                     }
-                    if (hasNonEmptyValue) {
-                        filtered.add(new Object[]{targetIndex});
+
+                    // ✅ Run=Y + return TestCaseName
+                    if (hasNonEmptyValue && "Y".equalsIgnoreCase(row.get("Run"))) {
+                        filtered.add(new Object[]{row.get("TestCaseName")});
                     }
                 }
             }
+
         } else {
-            // No datasetIndex specified → run all valid rows
+            // Run all rows with Run=Y
             for (int i = 0; i < dashboardData.size(); i++) {
+
                 HashMap<String, String> row = dashboardData.get(i);
 
                 if (row != null && !row.isEmpty()) {
+
                     boolean hasNonEmptyValue = false;
                     for (String val : row.values()) {
                         if (val != null && val.trim().length() > 0) {
@@ -111,8 +123,10 @@ public class EndtoEndTest extends Base
                             break;
                         }
                     }
-                    if (hasNonEmptyValue) {
-                        filtered.add(new Object[]{i});
+
+                    // ✅ Run=Y + return TestCaseName
+                    if (hasNonEmptyValue && "Y".equalsIgnoreCase(row.get("Run"))) {
+                        filtered.add(new Object[]{row.get("TestCaseName")});
                     }
                 }
             }
@@ -125,7 +139,18 @@ public class EndtoEndTest extends Base
 
         return data;
     }
+    private HashMap<String, String> getRow(
+            List<HashMap<String, String>> data,
+            String testCaseName) {
 
+        for (HashMap<String, String> row : data) {
+            if (testCaseName.equalsIgnoreCase(row.get("TestCaseName"))) {
+                return row;
+            }
+        }
+
+        throw new RuntimeException("❌ No data found for TestCaseName: " + testCaseName);
+    }
 }
 
 

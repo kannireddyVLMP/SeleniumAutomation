@@ -42,9 +42,11 @@ public class TestListener implements ITestListener {
             new File(folderPath).mkdirs();
             TakesScreenShot.takeScreenshot(Base.driver, screenshotPath);
             logger.info("Screenshot captured on failure: " + screenshotPath);
+            Object[] params = result.getParameters();
+            String testCaseName = params[0].toString();
             Excel.updateResult(
                     "Results",
-                    result.getMethod().getMethodName(),
+                    testCaseName,
                     stepName,
                     "FAIL",
                     IndexedColors.RED
@@ -59,9 +61,11 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         logger.info("Test Passed: " + result.getMethod().getMethodName());
+        Object[] params = result.getParameters();
+        String testCaseName = params[0].toString();
         Excel.updateResult(
                 "Results",
-                result.getMethod().getMethodName(),   // TestCaseName
+                testCaseName,   // TestCaseName
                 "Completed Execution",                          // StepName (you can customize)
                 "PASS",                               // Status
                 IndexedColors.GREEN                   // Color
@@ -72,9 +76,11 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestSkipped(ITestResult result) {
         logger.warn("Test Skipped: " + result.getMethod().getMethodName());
+        Object[] params = result.getParameters();
+        String testCaseName = params[0].toString();
         Excel.updateResult(
                 "Results",
-                result.getMethod().getMethodName(),
+                testCaseName,
                 "Skipped Execution",
                 "SKIP",
                 IndexedColors.YELLOW
