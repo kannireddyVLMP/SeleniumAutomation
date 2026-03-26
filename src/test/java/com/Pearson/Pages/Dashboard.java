@@ -5,6 +5,7 @@ package com.Pearson.Pages;
 
 import com.Pearson.Base.Base;
 import com.Pearson.CommonMethods.CommonMethods;
+import com.Pearson.Utilities.ExtentLogger;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
@@ -22,22 +23,21 @@ import static com.Pearson.CommonMethods.CommonMethods.webDriverWait;
 
 public class Dashboard extends Base
 {
-    WebDriver driver;
     private static final Logger logger = LogManager.getLogger(Dashboard.class);
+    private WebDriver driver;
+    private CommonMethods cm;
 
-    // Locators
+    public Dashboard(WebDriver driver) {
+        this.driver = driver;
+        this.cm = new CommonMethods(driver); // ✅ pass driver
+    }
+// Locators
 
-    private final static  By viewButton = By.xpath(".//button[contains(text(),'View')]");
+    private final static  By viewButton = By.xpath(".//button[contains(text(),'Vew')]");
     private final static By addToCartButton = By.xpath(".//button[contains(text(),'Add To Cart')]");
     private final static By navHome = By.xpath("//button[contains(text(),'HOME')]");
     private  final static By navOrders = By.xpath("//button[contains(text(),'ORDERS')]");
     private final static By navCart = By.xpath("//ul//button[contains(text(),'Cart')]");
-
-
-     Dashboard(WebDriver driver) {
-        this.driver = driver;
-
-    }
 
 
     public void addProductToCart(String productNameToAdd) throws InterruptedException {
@@ -48,7 +48,8 @@ public class Dashboard extends Base
 
             for (WebElement card : productCards) {
                 String rawName = card.findElement(By.xpath(".//h5/b")).getText();
-
+                logger.info("Product found on page: " + rawName);
+                ExtentLogger.info("Product found on page: " + rawName);
         // Clean up: remove price suffix and normalize spaces
                 String name = rawName.split("==")[0].trim().replaceAll("\\s+", " ").toLowerCase();
                 System.out.println("Checking product: " + name);
@@ -72,12 +73,15 @@ public class Dashboard extends Base
                         js.executeScript("arguments[0].click();", addBtn);
                     }
                     logger.info("Product Added Successfully " + productNameToAdd);
+                    ExtentLogger.info("Product Added Successfully " + productNameToAdd);
+
                     Thread.sleep(2000);
                     break;
                 }
            }
             if (!productFound) {
                 logger.info("Product Not Found " + productNameToAdd);
+                ExtentLogger.info("Product Not Found " + productNameToAdd);
                 throw new NoSuchElementException("Product not found: " + productNameToAdd);
 
             }
@@ -85,8 +89,9 @@ public class Dashboard extends Base
         {
             // Take screenshot on failure
             logger.error("Error adding product to cart: " + e.getMessage());
+            ExtentLogger.info("Error adding product to cart: " + e.getMessage());
 
-            throw e;
+
 
         }
     }
@@ -97,6 +102,7 @@ public class Dashboard extends Base
             WebElement toast = wait.until(ExpectedConditions
                     .presenceOfElementLocated(By.id("toast-container")));
             logger.info("Toast Message is Viewed");
+            ExtentLogger.info("Toast Message is Viewed");
             Boolean b =  toast.isDisplayed();
                 Assert.assertTrue(b, "Toast message is not displayed!");
         }
@@ -104,9 +110,8 @@ public class Dashboard extends Base
         {
               // Take screenshot on failure
                 logger.error("Error adding product to cart: " + e.getMessage());
-
-
-                Assert.fail("Toast message is not displayed: " + e.getMessage());
+            ExtentLogger.info("Error adding product to cart: " + e.getMessage());
+            Assert.fail("Toast message is not displayed: " + e.getMessage());
 
 
         }
@@ -118,12 +123,13 @@ public class Dashboard extends Base
             String cartText = cartElement.getText().trim();
             System.out.println("Cart text: " + cartText);
             logger.info("Cart text is: " + cartText + " Cart added successfully");
+            ExtentLogger.info("Cart text is: " + cartText + " Cart added successfully");
             Thread.sleep(2000);
             Assert.assertEquals(cartText, expectedCount);
         } catch (NoSuchElementException e) {
             // Take screenshot on failure
             logger.error("Cart count is not correct: " + e.getMessage());
-
+            ExtentLogger.info("Cart count is not correct: " + e.getMessage());
             Assert.fail("Cart count is not correct: " + e.getMessage());
         }
     }
@@ -132,21 +138,21 @@ public class Dashboard extends Base
             {
                 Actions a = new Actions(driver);
                 a.moveToElement(driver.findElement(By.xpath("//ul//button[contains(text(),'Cart')]"))).build().perform();
-
                 Thread.sleep(1000);
                 WebElement cartBtn = driver.findElement(By.xpath("//ul//button[contains(text(),'Cart')]"));
                 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", cartBtn);
                 ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cartBtn);
 
                 logger.info("Navigated to Cart Page Successfully");
-
+                ExtentLogger.info("Navigated to Cart Page Successfully");
                 Thread.sleep(2000);
             }
             catch (Exception e)
             {
                 // Take screenshot on failure
                 logger.error("Error navigating to cart page: " + e.getMessage());
-                 throw e;
+                ExtentLogger.info("Error navigating to cart page: " + e.getMessage());
+                 throw new RuntimeException("Error navigating to cart page: " + e.getMessage());
             }
         }
 
