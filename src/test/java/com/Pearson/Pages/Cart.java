@@ -2,6 +2,7 @@ package com.Pearson.Pages;
 
 import com.Pearson.Base.Base;
 import com.Pearson.CommonMethods.CommonMethods;
+import com.Pearson.Utilities.ExtentLogger;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
@@ -15,19 +16,16 @@ import static com.Pearson.CommonMethods.CommonMethods.click;
 
 public class Cart extends Base
 {
-
-    WebDriver driver;
-    String screenshotFolder;
     private static final Logger logger = LogManager.getLogger(Cart.class);
-    // Locators
+    private WebDriver driver;
+    private CommonMethods cm;
+
+    public Cart(WebDriver driver) {
+        this.driver = driver;
+        this.cm = new CommonMethods(driver); // ✅ pass driver
+    }
     private final static By cartProductName = By.cssSelector(".cartSection h3");
     private final static  By checkoutButton = By.xpath("//button[contains(text(),'Checkout')]");
-    Cart(WebDriver driver)
-    {
-        this.driver = driver;
-
-        CommonMethods.driver = driver;
-    }
 
     // Validate product name in cart
     public void isProductInCart(String expectedProductName)
@@ -41,8 +39,9 @@ public class Cart extends Base
                 "Cart validation failed!"
         );
             logger.info("Cart validation successful: " + actualProductName);
+        ExtentLogger.info("Cart validation successful: " + actualProductName);
 
-        }
+    }
 
     public void goToCheckout() throws InterruptedException
     {
@@ -52,13 +51,12 @@ public class Cart extends Base
             wait.until(ExpectedConditions.elementToBeClickable(checkoutButton));
              CommonMethods.click(checkoutButton);
         } catch (ElementClickInterceptedException e) {
-            logger.warn("Click intercepted, using JS click");
             JavascriptExecutor js = (JavascriptExecutor) driver;
             js.executeScript("arguments[0].click();", checkoutButton);
         }
 
         Thread.sleep(2000);
-         logger.info("Navigated to Payment Page.");
+
 
     }
 }

@@ -64,7 +64,7 @@ public class EndtoEndTest extends Base
                 paymentRow.get("CVV"),
                 paymentRow.get("Name")
         );
-        payment.validateShippingInfo(uName, paymentRow.get("Country"));
+        payment.validateShippingInfo(getProp("UserName"), paymentRow.get("Country"));
         payment.placeOrder();
 
         // Order

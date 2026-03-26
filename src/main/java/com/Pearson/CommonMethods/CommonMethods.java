@@ -14,6 +14,12 @@ public class CommonMethods
 {
     public static WebDriver driver;
 
+    public CommonMethods(WebDriver driver)
+    {
+        this.driver = driver;
+    }
+
+
     public static void waitForPageLoad() throws InterruptedException {
         Thread.sleep(2000); // Adjust the sleep time as needed
     }
