@@ -61,9 +61,9 @@ public class Base
                 break;
             case "Edge":
                 WebDriverManager.edgedriver().setup();
-                EdgeOptions optt = new EdgeOptions();
-                optt.setAcceptInsecureCerts(true);
-                driver = new EdgeDriver(optt);
+                EdgeOptions opt1 = new EdgeOptions();
+                opt1.setAcceptInsecureCerts(true);
+                driver = new EdgeDriver(opt1);
                 driver.manage().window().maximize();
                 logger.info("Running tests on Edge browser");
 
