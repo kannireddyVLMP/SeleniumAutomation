@@ -53,13 +53,7 @@ public class Excel {
                 }
 
                 workbookData.put(sheet.getSheetName(), sheetData);
-                String token = System.getenv("GITHUB_TOKEN");
-                if (token != null) {
-                    System.out.println("GITHUB_TOKEN is set.");
-                } else {
-                    System.out.println("GITHUB_TOKEN is NOT set.");
                 }
-            }
         } catch (IOException e) {
             e.printStackTrace();
         }
