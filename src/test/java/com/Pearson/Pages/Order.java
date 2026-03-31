@@ -49,7 +49,7 @@ public class Order extends Base
     // Validate product name
     public void validateProductName(String expectedProduct) {
         try {
-            logger.info("Validating product name on order page...");
+            logger.info("Validating name of the product on order page...");
             ExtentLogger.info("Validating product name on order page...");
             By productName = By.xpath("//div[@class='title' and contains(text(),'"+expectedProduct+"')]");   // adjust if table structure differs
 
