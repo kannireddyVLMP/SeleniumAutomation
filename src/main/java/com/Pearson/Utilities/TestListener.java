@@ -140,6 +140,6 @@ public class TestListener implements ITestListener {
     {
         extent.flush(); // 🔥 generates report
         logger.info("Test execution finished. Report generated.");
-        ExtentLogger.info("Test execution finished. Report generated.");
+        //ExtentLogger.info("Test execution finished. Report generated.");
     }
 }

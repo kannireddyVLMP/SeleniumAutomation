@@ -55,6 +55,7 @@ public class Dashboard extends Base {
                         JavascriptExecutor js = (JavascriptExecutor) driver;
                         js.executeScript("arguments[0].scrollIntoView(true);", addBtn);
                         addBtn.click();
+                        Thread.sleep(2000);
                     } catch (ElementClickInterceptedException e) {
                         logger.warn("Click intercepted, using JS click");
                         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -75,16 +76,15 @@ public class Dashboard extends Base {
                 throw new NoSuchElementException("Product not found: " + productNameToAdd);
 
             }
-        } catch (Exception e)
-        {
+        } catch (Exception e) {
             // Take screenshot on failure
             logger.error("Error adding product to cart: " + e.getMessage());
             ExtentLogger.info("Error adding product to cart: " + e.getMessage());
 
 
-
         }
     }
+
     public void isProductAddedToastDisplayed() {
         try {
             WebElement toast = cm.waitForElement(toastContainer, 5);
@@ -133,27 +133,32 @@ public class Dashboard extends Base {
                     ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cartBtn);
                 }
             }
-
-            // ✅ Wait until "My Cart" heading is visible
-            logger.info("My Cart heading visibility check started");
-            ExtentLogger.info("My Cart heading visibility check started");
-
-            By myCartHeading = By.xpath("//h1[contains(text(),'My Cart')]");
-            cm.waitForElement(myCartHeading, 5);
-
-            logger.info("My Cart heading visibled successfully");
-            ExtentLogger.info("My Cart heading visibled successfully");
-
-            logger.info("Navigated to Cart Page successfully");
-            ExtentLogger.pass("Navigated to Cart Page successfully");
         } catch (TimeoutException e) {
             logger.error("Cart page did not load within timeout: " + e.getMessage());
             ExtentLogger.fail("Cart page did not load within timeout: " + e.getMessage());
             throw new RuntimeException("Cart page did not load within timeout", e);
-        } catch (Exception e) {
-            logger.error("Error navigating to Cart Page: " + e.getMessage());
-            ExtentLogger.fail("Error navigating to Cart Page: " + e.getMessage());
-            throw new RuntimeException("Error navigating to Cart Page: " + e.getMessage(), e);
+        }
+    }
+
+    // ✅ Wait until "My Cart" heading is visible
+    public void cartheadingCheck() {
+        try {
+            logger.info("My Cart heading visibility check started");
+
+
+            ExtentLogger.info("My Cart heading visibility check started");
+            Thread.sleep(2000);
+            By myCartHeading = By.xpath("//h1[contains(text(),'My Cart')]");
+            WebElement ele = cm.waitForElement(myCartHeading, 10);
+            Assert.assertTrue(ele.isDisplayed(), "My Cart heading is not visible!");
+            Thread.sleep(2000);
+            logger.info("My Cart heading visibled successfully");
+            ExtentLogger.info("My Cart heading visibled successfully");
+
+            } catch (TimeoutException | InterruptedException e) {
+            logger.error("My Cart heading not visibled" + e.getMessage());
+            ExtentLogger.fail("My Cart heading not visibled" + e.getMessage());
+            throw new RuntimeException("My Cart heading not visibled", e);
         }
     }
 }
