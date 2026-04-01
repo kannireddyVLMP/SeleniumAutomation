@@ -1,6 +1,3 @@
-// ...existing code...
-// This class was moved from src/main/java/com/Pearson/Pages/ to src/test/java/com/Pearson/Pages/
-// ...existing code...
 package com.Pearson.Pages;
 
 import com.Pearson.Base.Base;
@@ -16,29 +13,22 @@ import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.NoSuchElementException;
 
-import static com.Pearson.CommonMethods.CommonMethods.webDriverWait;
-
-
-public class Dashboard extends Base
-{
+public class Dashboard extends Base {
     private static final Logger logger = LogManager.getLogger(Dashboard.class);
     private WebDriver driver;
     private CommonMethods cm;
 
     public Dashboard(WebDriver driver) {
         this.driver = driver;
-        this.cm = new CommonMethods(driver); // ✅ pass driver
+        this.cm = new CommonMethods(driver); // ✅ use instance driver
     }
-// Locators
 
-    private final static  By viewButton = By.xpath(".//button[contains(text(),'Vew')]");
-    private final static By addToCartButton = By.xpath(".//button[contains(text(),'Add To Cart')]");
-    private final static By navHome = By.xpath("//button[contains(text(),'HOME')]");
-    private  final static By navOrders = By.xpath("//button[contains(text(),'ORDERS')]");
-    private final static By navCart = By.xpath("//ul//button[contains(text(),'Cart')]");
-
+    // Locators
+    private static final By navHome = By.xpath("//button[contains(text(),'HOME')]");
+    private static final By navOrders = By.xpath("//button[contains(text(),'ORDERS')]");
+    private static final By navCart = By.cssSelector("button[routerlink='/dashboard/cart']");
+    private static final By toastContainer = By.id("toast-container");
 
     public void addProductToCart(String productNameToAdd) throws InterruptedException {
         try {
@@ -50,7 +40,7 @@ public class Dashboard extends Base
                 String rawName = card.findElement(By.xpath(".//h5/b")).getText();
                 logger.info("Product found on page: " + rawName);
                 ExtentLogger.info("Product found on page: " + rawName);
-        // Clean up: remove price suffix and normalize spaces
+                // Clean up: remove price suffix and normalize spaces
                 String name = rawName.split("==")[0].trim().replaceAll("\\s+", " ").toLowerCase();
                 System.out.println("Checking product: " + name);
                 String target = productNameToAdd.trim().replaceAll("\\s+", " ").toLowerCase();
@@ -60,7 +50,7 @@ public class Dashboard extends Base
                     productFound = true;
                     WebElement addBtn = card.findElement(By.xpath(".//button[contains(text(),'Add To Cart')]"));
                     try {
-                        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
                         wait.until(ExpectedConditions.elementToBeClickable(addBtn));
                         JavascriptExecutor js = (JavascriptExecutor) driver;
                         js.executeScript("arguments[0].scrollIntoView(true);", addBtn);
@@ -78,7 +68,7 @@ public class Dashboard extends Base
                     Thread.sleep(2000);
                     break;
                 }
-           }
+            }
             if (!productFound) {
                 logger.info("Product Not Found " + productNameToAdd);
                 ExtentLogger.info("Product Not Found " + productNameToAdd);
@@ -95,71 +85,75 @@ public class Dashboard extends Base
 
         }
     }
-
     public void isProductAddedToastDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         try {
-            WebElement toast = wait.until(ExpectedConditions
-                    .presenceOfElementLocated(By.id("toast-container")));
-            logger.info("Toast Message is Viewed");
-            ExtentLogger.info("Toast Message is Viewed");
-            Boolean b =  toast.isDisplayed();
-                Assert.assertTrue(b, "Toast message is not displayed!");
-        }
-        catch (TimeoutException e)
-        {
-              // Take screenshot on failure
-                logger.error("Error adding product to cart: " + e.getMessage());
-            ExtentLogger.info("Error adding product to cart: " + e.getMessage());
-            Assert.fail("Toast message is not displayed: " + e.getMessage());
-
-
-        }
-        }
-
-    public void isCartCountCorrect(String expectedCount) throws InterruptedException {
-        try {
-            WebElement cartElement = webDriverWait(By.xpath("//button[@routerlink='/dashboard/cart']/label[contains(text(),'" + expectedCount + "')]"), 10);
-            String cartText = cartElement.getText().trim();
-            System.out.println("Cart text: " + cartText);
-            logger.info("Cart text is: " + cartText + " Cart added successfully");
-            ExtentLogger.info("Cart text is: " + cartText + " Cart added successfully");
-            Thread.sleep(2000);
-            Assert.assertEquals(cartText, expectedCount);
-        } catch (NoSuchElementException e) {
-            // Take screenshot on failure
-            logger.error("Cart count is not correct: " + e.getMessage());
-            ExtentLogger.info("Cart count is not correct: " + e.getMessage());
-            Assert.fail("Cart count is not correct: " + e.getMessage());
+            WebElement toast = cm.waitForElement(toastContainer, 5);
+            Assert.assertTrue(toast.isDisplayed(), "Toast message is not displayed!");
+            logger.info("Toast Message displayed successfully");
+            ExtentLogger.pass("Toast Message displayed successfully");
+        } catch (Exception e) {
+            logger.error("Toast message not displayed: " + e.getMessage());
+            ExtentLogger.fail("Toast message not displayed: " + e.getMessage());
+            Assert.fail("Toast message not displayed: " + e.getMessage());
         }
     }
-        public void goToCartPage() throws InterruptedException {
-            try
-            {
-                Actions a = new Actions(driver);
-                a.moveToElement(driver.findElement(By.xpath("//ul//button[contains(text(),'Cart')]"))).build().perform();
-                Thread.sleep(1000);
-                WebElement cartBtn = driver.findElement(By.xpath("//ul//button[contains(text(),'Cart')]"));
-                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", cartBtn);
-                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cartBtn);
 
-                logger.info("Navigated to Cart Page Successfully");
-                ExtentLogger.info("Navigated to Cart Page Successfully");
-                Thread.sleep(2000);
-            }
-            catch (Exception e)
-            {
-                // Take screenshot on failure
-                logger.error("Error navigating to cart page: " + e.getMessage());
-                ExtentLogger.info("Error navigating to cart page: " + e.getMessage());
-                 throw new RuntimeException("Error navigating to cart page: " + e.getMessage());
-            }
+    public void isCartCountCorrect(String expectedCount) {
+        try {
+            By cartCountLocator = By.xpath("//button[@routerlink='/dashboard/cart']/label[contains(text(),'" + expectedCount + "')]");
+            WebElement cartElement = cm.waitForElement(cartCountLocator, 5);
+
+            String cartText = cartElement.getText().trim();
+            logger.info("Cart text is: " + cartText);
+            ExtentLogger.pass("Cart count verified: " + cartText);
+            Assert.assertEquals(cartText, expectedCount, "Cart count mismatch!");
+        } catch (Exception e) {
+            logger.error("Cart count verification failed: " + e.getMessage());
+            ExtentLogger.fail("Cart count verification failed: " + e.getMessage());
+            Assert.fail("Cart count verification failed: " + e.getMessage());
         }
+    }
 
+    public void goToCartPage() {
+        try {
+            // Wait for element to be visible
+            WebElement cartBtn = cm.waitForElement(navCart, 5);
 
+            // Scroll into view
+            cm.jsScrollIntoView(cartBtn);
 
+            try {
+                // Primary click via JS
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cartBtn);
+            } catch (Exception jsFail) {
+                logger.warn("JS click failed, retrying with Actions + JS");
+                try {
+                    new Actions(driver).moveToElement(cartBtn).click().perform();
+                } catch (Exception actionsFail) {
+                    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cartBtn);
+                }
+            }
+
+            // ✅ Wait until "My Cart" heading is visible
+            logger.info("My Cart heading visibility check started");
+            ExtentLogger.info("My Cart heading visibility check started");
+
+            By myCartHeading = By.xpath("//h1[contains(text(),'My Cart')]");
+            cm.waitForElement(myCartHeading, 5);
+
+            logger.info("My Cart heading visibled successfully");
+            ExtentLogger.info("My Cart heading visibled successfully");
+
+            logger.info("Navigated to Cart Page successfully");
+            ExtentLogger.pass("Navigated to Cart Page successfully");
+        } catch (TimeoutException e) {
+            logger.error("Cart page did not load within timeout: " + e.getMessage());
+            ExtentLogger.fail("Cart page did not load within timeout: " + e.getMessage());
+            throw new RuntimeException("Cart page did not load within timeout", e);
+        } catch (Exception e) {
+            logger.error("Error navigating to Cart Page: " + e.getMessage());
+            ExtentLogger.fail("Error navigating to Cart Page: " + e.getMessage());
+            throw new RuntimeException("Error navigating to Cart Page: " + e.getMessage(), e);
+        }
+    }
 }
-
-
-
-// ...existing code...

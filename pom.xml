@@ -107,6 +107,9 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <!-- ✅ Add fork control -->
+                    <forkCount>1</forkCount>          <!-- run in a single JVM -->
+                    <reuseForks>true</reuseForks>     <!-- reuse JVM instead of restarting -->
                 </configuration>
             </plugin>
         </plugins>

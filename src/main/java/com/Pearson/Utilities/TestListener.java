@@ -46,7 +46,7 @@ public class TestListener implements ITestListener {
             testCaseName = params[0].toString();
             logger.info("TestCase Started: " + testCaseName);
 
-           // 🔥 TC_01
+            // 🔥 TC_01
         } else {
             testCaseName = result.getMethod().getMethodName();
         }
@@ -66,7 +66,7 @@ public class TestListener implements ITestListener {
             String folderPath = Base.screenshotRunFolder + "/" + stepName.split("\\.")[0];
             new File(folderPath).mkdirs();
 
-            TakesScreenShot.takeScreenshot(Base.driver, screenshotPath);
+            TakesScreenShot.takeScreenshot(Base.getDriver(), screenshotPath);
             logger.info("Screenshot captured on failure: " + screenshotPath);
             ExtentLogger.info("Screenshot captured on failure: " + screenshotPath);
 
@@ -143,6 +143,3 @@ public class TestListener implements ITestListener {
         ExtentLogger.info("Test execution finished. Report generated.");
     }
 }
-
-
-

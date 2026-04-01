@@ -1,93 +1,79 @@
 package com.Pearson.Base;
 
-import com.Pearson.Utilities.ExtentLogger;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
-import org.testng.annotations.AfterMethod;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-
-public class Base
-{
-    public static WebDriver driver;
+public class Base {
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     public static Properties prop = new Properties();
-
     public static String screenshotRunFolder = "target/screenshots";
+    public static final Logger logger = LogManager.getLogger(Base.class);
 
-    private static final Logger logger = LogManager.getLogger(Base.class);
-
+    // ✅ Load Config.properties from classpath
     static {
-        try {
-            FileInputStream fis = new FileInputStream("src/test/resources/Config.properties");
-            prop.load(fis);
-        } catch (Exception e) {
+        try (InputStream input = Base.class.getClassLoader().getResourceAsStream("Config.properties")) {
+            if (input == null) {
+                throw new RuntimeException("Config.properties not found in classpath");
+            }
+            prop.load(input);
+            logger.info("Properties loaded: " + prop);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    // ✅ Helper method (use this everywhere)
     public static String getProp(String key) {
         return prop.getProperty(key);
     }
 
+    public static WebDriver getDriver() {
+        return driver.get();
+    }
 
     @BeforeMethod
-    public  void browserIntialzationAndLauchURL() throws InterruptedException, IOException
-    {
+    public void browserInitializationAndLaunchURL() {
         String browser = getProp("Browser");
         String url = getProp("URL");
 
-        switch( browser)
-        {
-            case "Chrome":
+        switch (browser.toLowerCase()) {
+            case "chrome":
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions opt = new ChromeOptions();
                 opt.setAcceptInsecureCerts(true);
-                driver = new ChromeDriver(opt);
-                driver.manage().window().maximize();
-                logger.info("Running tests on Chrome Browser");
-
+                driver.set(new ChromeDriver(opt));
                 break;
-            case "Edge":
+            case "edge":
                 WebDriverManager.edgedriver().setup();
                 EdgeOptions opt1 = new EdgeOptions();
                 opt1.setAcceptInsecureCerts(true);
-                driver = new EdgeDriver(opt1);
-                driver.manage().window().maximize();
-                logger.info("Running tests on Edge browser");
-
+                driver.set(new EdgeDriver(opt1));
                 break;
             default:
-                logger.error("Browser not supported, please check the configuration.");
-                    throw new RuntimeException("Browser not supported, please check the configuration.");
+                throw new RuntimeException("Browser not supported: " + browser);
         }
 
-
-
-            driver.get(url);
-            logger.info("Page loaded successfully!");
-            logger.info("Current URL: " + driver.getCurrentUrl());
-
+        getDriver().manage().window().maximize();
+        getDriver().get(url);
+        logger.info("Page loaded successfully: " + url);
     }
+
     @AfterMethod
-    public  void tearDown()
-    {
-        driver.quit();
-        logger.info("Browser closed successfully.");
-
-
+    public void tearDown() {
+        if (getDriver() != null) {
+            getDriver().quit();
+            driver.remove(); // ✅ prevents leaks in parallel runs
+            logger.info("Browser closed successfully.");
+        }
     }
-
-
 }

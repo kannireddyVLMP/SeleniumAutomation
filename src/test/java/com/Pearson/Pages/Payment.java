@@ -5,120 +5,119 @@ import com.Pearson.CommonMethods.CommonMethods;
 import com.Pearson.Utilities.ExtentLogger;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-import static java.lang.Thread.sleep;
+import java.util.List;
 
 public class Payment extends Base {
-
     private WebDriver driver;
     private CommonMethods cm;
 
     public Payment(WebDriver driver) {
         this.driver = driver;
-        this.cm = new CommonMethods(driver); // ✅ pass driver
+        this.cm = new CommonMethods(driver); // ✅ instance driver
     }
+
     private static final Logger logger = LogManager.getLogger(Payment.class);
 
-    private final static  By creditCardNumber = By.xpath("//div[contains(text(),'Credit Card Number')]/parent::div/input");
-    private final static By monthDropdown    = By.xpath("(//select[@class='input ddl'])[1]"); // month
-    private final static By dateDropdown     = By.xpath("(//select[@class='input ddl'])[2]"); // date
-    private final static By cvvCode          = By.xpath("//div[@class='title' and contains(text(),'CVV') ]/parent::div/input");
-    private final static By nameOnCard       = By.xpath("//div[@class='title' and contains(text(),'Name') ]/parent::div/input");
-    private final static By emailField       = By.xpath("//div[@class='user__name mt-5']//label/following-sibling::input");
-    private final static By countryField     = By.cssSelector("input[placeholder='Select Country']");
-    private final static By countryDropdownOptions = By.cssSelector(".ta-results.list-group span");
-    private final static By placeOrderButton = By.xpath("//a[contains(text(),'Place Order ')]");
+    // Locators
+    private static final By creditCardNumber = By.xpath("//div[contains(text(),'Credit Card Number')]/parent::div/input");
+    private static final By monthDropdown    = By.xpath("(//select[@class='input ddl'])[1]");
+    private static final By dateDropdown     = By.xpath("(//select[@class='input ddl'])[2]");
+    private static final By cvvCode          = By.xpath("//div[@class='title' and contains(text(),'CVV')]/parent::div/input");
+    private static final By nameOnCard       = By.xpath("//div[@class='title' and contains(text(),'Name')]/parent::div/input");
+    private static final By emailField       = By.xpath("//div[@class='user__name mt-5']//label/following-sibling::input");
+    private static final By countryField     = By.cssSelector("input[placeholder='Select Country']");
+    private static final By countryDropdownOptions = By.cssSelector(".ta-results.list-group span");
+    private static final By placeOrderButton = By.xpath("//a[contains(text(),'Place Order ')]");
 
-
-
-    // Method 1: Fill Personal Info
+    // Fill Personal Info
     public void fillPersonalInfo(String cardNumber, String month, String date,
-                                 String cvv, String name) throws InterruptedException {
+                                 String cvv, String name) {
         try {
             logger.info("Filling personal info...");
             ExtentLogger.info("Filling personal info...");
-            WebElement ele = cm.webDriverWait(creditCardNumber, 5);
-            ele.clear();
-            Thread.sleep(2000);
-            ele.sendKeys(cardNumber);
 
-            WebElement monthElement = CommonMethods.webDriverWait(monthDropdown, 5);
+            WebElement cardInput = cm.waitForElement(creditCardNumber, 10);
+            cardInput.clear();
+            cardInput.sendKeys(cardNumber);
+
+            WebElement monthElement = cm.waitForElement(monthDropdown, 10);
             new Select(monthElement).selectByVisibleText(month);
             logger.info("Selected expiry month: " + month);
             ExtentLogger.info("Selected expiry month: " + month);
 
-            WebElement dateElement = CommonMethods.webDriverWait(dateDropdown, 5);
+            WebElement dateElement = cm.waitForElement(dateDropdown, 10);
             new Select(dateElement).selectByVisibleText(date);
             logger.info("Selected expiry date: " + date);
             ExtentLogger.info("Selected expiry date: " + date);
 
             cm.sendKeys(cvvCode, cvv);
             cm.sendKeys(nameOnCard, name);
+
             logger.info("Personal info filled successfully.");
-            ExtentLogger.info("Personal info filled successfully.");
-
+            ExtentLogger.pass("Personal info filled successfully.");
         } catch (Exception e) {
-
-            logger.error("Personal info failed. Screenshot saved: " + e.getMessage(), e);
-            ExtentLogger.info("Personal info failed. Screenshot saved: " + e.getMessage());
-            throw e;
+            logger.error("Personal info entry failed: " + e.getMessage());
+            ExtentLogger.fail("Personal info entry failed: " + e.getMessage());
+            Assert.fail("Personal info entry failed: " + e.getMessage());
         }
     }
 
-    // Method 2: Validate Shipping Info (email auto-filled)
-    public void validateShippingInfo(String loginEmail, String country) throws InterruptedException {
+    // Validate Shipping Info
+    public void validateShippingInfo(String loginEmail, String country) {
         try {
             logger.info("Validating shipping info...");
             ExtentLogger.info("Validating shipping info...");
-            String enteredEmail = CommonMethods.driver.findElement(emailField).getAttribute("value").trim();
-            Assert.assertEquals(enteredEmail.toLowerCase().trim(),loginEmail.toLowerCase().trim());
-             logger.info("Auto-filled email: " + enteredEmail + " | Expected: " + loginEmail);
-             ExtentLogger.info("Auto-filled email: " + enteredEmail + " | Expected: " + loginEmail);
+
+            String enteredEmail = cm.waitForElement(emailField, 10).getAttribute("value").trim();
+            Assert.assertEquals(enteredEmail.toLowerCase(), loginEmail.toLowerCase(), "Email mismatch!");
+            logger.info("Auto-filled email validated: " + enteredEmail);
+            ExtentLogger.pass("Auto-filled email validated: " + enteredEmail);
+
             // Type country letters one by one
             for (char c : country.toCharArray()) {
-                cm.sendKeys(countryField, String.valueOf(c));
-                sleep(500);
+                cm.sendKeysWithoutClear(countryField, String.valueOf(c));
+                Thread.sleep(300);
             }
+
             logger.info("Typed country letters: " + country);
             ExtentLogger.info("Typed country letters: " + country);
+
             // Select country from dropdown
-            for (WebElement option : CommonMethods.driver.findElements(countryDropdownOptions)) {
+            List<WebElement> options = driver.findElements(countryDropdownOptions);
+            for (WebElement option : options) {
                 if (option.getText().equalsIgnoreCase(country)) {
                     option.click();
                     logger.info("Selected country: " + country);
-                    ExtentLogger.info("Selected country: " + country);
+                    ExtentLogger.pass("Selected country: " + country);
                     break;
                 }
             }
-
-
         } catch (Exception e) {
-
-            logger.info("Shipping info validation failed. Screenshot saved: " + e.getMessage(), e);
-            ExtentLogger.info("Shipping info validation failed. Screenshot saved: " + e.getMessage());
-            throw e;
+            logger.error("Shipping info validation failed: " + e.getMessage());
+            ExtentLogger.fail("Shipping info validation failed: " + e.getMessage());
+            Assert.fail("Shipping info validation failed: " + e.getMessage());
         }
     }
 
-    // Method 3: Place Order
-    public void placeOrder() throws InterruptedException {
+    // Place Order
+    public void placeOrder() {
         try {
             logger.info("Placing order...");
             ExtentLogger.info("Placing order...");
-            WebElement placeOrderBtn = driver.findElement(placeOrderButton);
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", placeOrderBtn);
-            sleep(3000);
-            logger.info("Order placed successfully.");
-            ExtentLogger.info("Order placed successfully.");
-        } catch (Exception e) {
 
-            logger.info("Placing order failed. "+ e.getMessage(), e);
-            ExtentLogger.info("Placing order failed. "+ e.getMessage());
-            throw e;
+            WebElement placeOrderBtn = cm.waitForElement(placeOrderButton, 10);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", placeOrderBtn);
+
+            logger.info("Order placed successfully.");
+            ExtentLogger.pass("Order placed successfully.");
+        } catch (Exception e) {
+            logger.error("Placing order failed: " + e.getMessage());
+            ExtentLogger.fail("Placing order failed: " + e.getMessage());
+            Assert.fail("Placing order failed: " + e.getMessage());
         }
     }
 }
