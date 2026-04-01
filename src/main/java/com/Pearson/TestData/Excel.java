@@ -184,8 +184,14 @@ public class Excel {
             Cell timeCell = row.createCell(3);
             CreationHelper createHelper = workbook.getCreationHelper();
             CellStyle dateStyle = workbook.createCellStyle();
+
+// Set date format
             dateStyle.setDataFormat(
                     createHelper.createDataFormat().getFormat("yyyy-MM-dd HH:mm:ss"));
+
+// Force left alignment
+            dateStyle.setAlignment(HorizontalAlignment.LEFT);
+
             timeCell.setCellStyle(dateStyle);
             timeCell.setCellValue(new Date());
 

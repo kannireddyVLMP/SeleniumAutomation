@@ -6,18 +6,22 @@ import com.Pearson.Utilities.ExtentLogger;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.time.Duration;
 import java.util.List;
 
 public class Cart extends Base {
     private static final Logger logger = LogManager.getLogger(Cart.class);
     private WebDriver driver;
     private CommonMethods cm;
-
+    private Dashboard d;
     public Cart(WebDriver driver) {
         this.driver = driver;
         this.cm = new CommonMethods(driver); // ✅ instance driver
+        this.d = new Dashboard(driver); // ✅ instance driver for Dashboard
     }
 
     // Locators
@@ -27,11 +31,15 @@ public class Cart extends Base {
     // Validate product name in cart
     public void isProductInCart(String expectedProductName) {
         try {
-            cm.waitForPageLoad();
 
+            cm.waitForPageLoad();
+            d.cartheadingCheck();
 // ✅ Wait for all product elements to be visible
             List<WebElement> productElements = cm.waitForElements(cartProductName, 10);
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".cartSection h3")));
 
+            productElements.forEach(element -> logger.info("Product element found: " + element.getText().trim()));
 // ✅ Get texts of all products
             List<String> productNames = cm.getElementsText(cartProductName, 10);
 
@@ -70,7 +78,7 @@ public class Cart extends Base {
             ExtentLogger.pass("Navigated to Checkout successfully");
         } catch (ElementClickInterceptedException e) {
             logger.warn("Click intercepted, using JS click");
-            WebElement checkoutBtn = cm.waitForElement(checkoutButton, 5);
+            WebElement checkoutBtn = cm.waitForElement(checkoutButton, 10);
             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", checkoutBtn);
         } catch (Exception e) {
             logger.error("Error navigating to Checkout: " + e.getMessage());

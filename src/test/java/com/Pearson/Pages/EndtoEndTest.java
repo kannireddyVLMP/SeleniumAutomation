@@ -40,7 +40,7 @@ public class EndtoEndTest extends Base {
             // Dashboard
            dashboard.addProductToCart(dashboardRow.get("ProductName"));
           dashboard.goToCartPage();
-
+            dashboard.cartheadingCheck();
             // Cart
             cart.isProductInCart(cartRow.get("ProductName"));
            cart.goToCheckout();
