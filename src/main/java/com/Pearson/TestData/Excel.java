@@ -2,6 +2,7 @@ package com.Pearson.TestData;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -53,7 +54,7 @@ public class Excel {
                 }
 
                 workbookData.put(sheet.getSheetName(), sheetData);
-                }
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -73,39 +74,72 @@ public class Excel {
 
 
     public static synchronized void clearResults() {
-        try (FileInputStream fis = new FileInputStream(excelPath)) {
-
-            Workbook workbook = new XSSFWorkbook(fis);
+        try (FileInputStream fis = new FileInputStream(excelPath);
+             Workbook workbook = new XSSFWorkbook(fis)) {
 
             Sheet sheet = workbook.getSheet("Results");
-            if (sheet != null) {
-                int lastRow = sheet.getLastRowNum();
-                for (int i = lastRow; i >= 0; i--) {
-                    Row row = sheet.getRow(i);
-                    if (row != null) sheet.removeRow(row);
-                }
-            } else {
+            if (sheet == null) {
                 sheet = workbook.createSheet("Results");
             }
 
-            // Header
+            DataFormatter formatter = new DataFormatter();
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            String today = sdf.format(new Date());
+
+            // Collect rows to keep (only today’s)
+            List<List<String>> rowsToKeep = new ArrayList<>();
+            Iterator<Row> rowIterator = sheet.iterator();
+
+            if (rowIterator.hasNext()) {
+                Row headerRow = rowIterator.next(); // skip header
+                while (rowIterator.hasNext()) {
+                    Row row = rowIterator.next();
+                    Cell tsCell = row.getCell(3, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
+                    String timestamp = formatter.formatCellValue(tsCell);
+
+                    if (timestamp.startsWith(today)) {
+                        List<String> rowData = new ArrayList<>();
+                        for (int i = 0; i < 4; i++) {
+                            Cell cell = row.getCell(i, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
+                            rowData.add(formatter.formatCellValue(cell));
+                        }
+                        rowsToKeep.add(rowData);
+                    }
+                }
+            }
+
+            // Clear sheet completely
+            int lastRow = sheet.getLastRowNum();
+            for (int i = lastRow; i >= 0; i--) {
+                Row row = sheet.getRow(i);
+                if (row != null) sheet.removeRow(row);
+            }
+
+            // Recreate header
             Row header = sheet.createRow(0);
             header.createCell(0).setCellValue("TestCaseName");
             header.createCell(1).setCellValue("StepName");
             header.createCell(2).setCellValue("Status");
             header.createCell(3).setCellValue("Timestamp");
 
+            // Write back only today’s rows
+            int rowNum = 1;
+            for (List<String> rowData : rowsToKeep) {
+                Row row = sheet.createRow(rowNum++);
+                for (int i = 0; i < rowData.size(); i++) {
+                    row.createCell(i).setCellValue(rowData.get(i));
+                }
+            }
+
             try (FileOutputStream fos = new FileOutputStream(excelPath)) {
                 workbook.write(fos);
             }
-
-            workbook.close(); // ✅ IMPORTANT FIX
+            workbook.close();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 
     // =========================================================
 // Updates results
@@ -165,7 +199,6 @@ public class Excel {
             e.printStackTrace();
         }
     }}
-
 
 
 
