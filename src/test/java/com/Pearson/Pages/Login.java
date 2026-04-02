@@ -32,7 +32,7 @@ public class Login extends Base {
             String uName = getProp("UserName");
             String pwd = getProp("Password");
 
-            logger.info("Fetched credentials: " + uName + " / " + pwd);
+            logger.info("Fetched credentials: " + uName + " and " + pwd);
 
             cm.sendKeys(usernameField, uName);
             cm.sendKeys(passwordField, pwd);

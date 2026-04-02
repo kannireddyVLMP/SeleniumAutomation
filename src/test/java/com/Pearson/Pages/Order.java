@@ -54,7 +54,7 @@ public class Order extends Base {
 
             logger.info("Validating product name on order page...");
             ExtentLogger.info("Validating product name on order page...");
-
+            System.out.println("Validating product name on order page...");
             // ✅ Wait for all product elements to be visible
             List<WebElement> productElements = cm.waitForElements(By.xpath("//td[@class='line-item product-info-column m-3']/div[@class='title']"), 10);
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
