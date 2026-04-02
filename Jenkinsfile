@@ -22,7 +22,7 @@ pipeline {
                 allowMissing: false,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'reports',
+                reportDir: 'target',
                 reportFiles: 'ExtentReport.html',
                 reportName: 'Extent Report'
             ])
@@ -33,11 +33,11 @@ pipeline {
 
         failure {
             // Archive screenshots (on failures)
-            archiveArtifacts artifacts: 'screenshots/**/*.png', fingerprint: true
+            archiveArtifacts artifacts: 'target/screenshots/**/*.png', fingerprint: true
 
             // Archive Extent report files (HTML + JSON)
-            archiveArtifacts artifacts: 'reports/**/*.html', fingerprint: true
-            archiveArtifacts artifacts: 'reports/**/*.json', fingerprint: true
+            archiveArtifacts artifacts: 'target/*.html', fingerprint: true
+            archiveArtifacts artifacts: 'target/*.json', fingerprint: true
 
             // Archive log4j2 logs
             archiveArtifacts artifacts: 'logs/**/*.log', fingerprint: true
