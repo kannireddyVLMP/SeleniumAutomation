@@ -33,7 +33,7 @@ public class Login extends Base {
             String pwd = getProp("Password");
 
             logger.info("Fetched credentials: " + uName + " and " + pwd);
-
+            System.out.println("Just Checking: Fetched credentials: " + uName + " and " + pwd);
             cm.sendKeys(usernameField, uName);
             cm.sendKeys(passwordField, pwd);
             cm.click(loginButton);
