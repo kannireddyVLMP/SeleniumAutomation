@@ -17,16 +17,6 @@ pipeline {
 
     post {
         always {
-            // Archive screenshots (on failures)
-            archiveArtifacts artifacts: 'screenshots/**/*.png', fingerprint: true
-
-            // Archive Extent report files
-            archiveArtifacts artifacts: 'reports/**/*.html', fingerprint: true
-            archiveArtifacts artifacts: 'reports/**/*.json', fingerprint: true
-
-            // Archive log4j2 logs
-            archiveArtifacts artifacts: 'logs/**/*.log', fingerprint: true
-
             // Publish Extent HTML report (requires HTML Publisher plugin)
             publishHTML([
                 reportDir: 'reports',
@@ -39,6 +29,16 @@ pipeline {
         }
 
         failure {
+            // Archive screenshots (on failures)
+            archiveArtifacts artifacts: 'screenshots/**/*.png', fingerprint: true
+
+            // Archive Extent report files (HTML + JSON)
+            archiveArtifacts artifacts: 'reports/**/*.html', fingerprint: true
+            archiveArtifacts artifacts: 'reports/**/*.json', fingerprint: true
+
+            // Archive log4j2 logs
+            archiveArtifacts artifacts: 'logs/**/*.log', fingerprint: true
+
             echo 'Build failed. Check logs, screenshots, and reports in artifacts.'
         }
 
