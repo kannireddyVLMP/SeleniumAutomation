@@ -60,7 +60,7 @@ public class Base {
                 driver.set(new EdgeDriver(opt1));
                 break;
             default:
-                throw new RuntimeException("Browser not supported: " + browser);
+                throw new RuntimeException(browser +"Browser is not supported:");
         }
 
         getDriver().manage().window().maximize();
