@@ -19,6 +19,9 @@ pipeline {
         always {
             // Publish Extent HTML report (requires HTML Publisher plugin)
             publishHTML([
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
                 reportDir: 'reports',
                 reportFiles: 'ExtentReport.html',
                 reportName: 'Extent Report'
