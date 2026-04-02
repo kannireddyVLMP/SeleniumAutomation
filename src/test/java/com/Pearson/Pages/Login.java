@@ -42,8 +42,8 @@ public class Login extends Base {
             cm.waitForElement(ordersLink, 10);
             Assert.assertTrue(driver.findElement(ordersLink).isDisplayed(), "Login failed - Orders link not visible");
 
-            logger.info("Login Successful with username: " + uName);
-            ExtentLogger.pass("Login Successful with username: " + uName);
+            logger.info("Login Successful with username: " + uName +"and Password: "+pwd);
+            ExtentLogger.pass("Login Successful with username: " + uName +"and Password: "+pwd);
         } catch (Exception e) {
             logger.error("Login failed: " + e.getMessage());
             ExtentLogger.fail("Login failed: " + e.getMessage());
