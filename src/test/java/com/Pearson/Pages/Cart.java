@@ -29,47 +29,47 @@ public class Cart extends Base {
     private static final By checkoutButton = By.xpath("//button[contains(text(),'Checkout')]");
 
     // Validate product name in cart
-//     public void isProductInCart(String expectedProductName) {
-//         try {
+    public void isProductInCart(String expectedProductName) {
+        try {
 
-//             cm.waitForPageLoad();
-//             d.cartheadingCheck();
-// // ✅ Wait for all product elements to be visible
-//             List<WebElement> productElements = cm.waitForElements(cartProductName, 10);
-//             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//             wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".cartSection h3")));
+            cm.waitForPageLoad();
+            d.cartheadingCheck();
+// ✅ Wait for all product elements to be visible
+            List<WebElement> productElements = cm.waitForElements(cartProductName, 10);
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".cartSection h3")));
 
-//             productElements.forEach(element -> logger.info("Product element found: " + element.getText().trim()));
-// // ✅ Get texts of all products
-//             List<String> productNames = cm.getElementsText(cartProductName, 10);
+            productElements.forEach(element -> logger.info("Product element found: " + element.getText().trim()));
+// ✅ Get texts of all products
+            List<String> productNames = cm.getElementsText(cartProductName, 10);
 
-//             boolean productFound = false;
-//             String actualProductName = null;
+            boolean productFound = false;
+            String actualProductName = null;
 
-//             for (String name : productNames) {
-//                 logger.info("Product in cart: " + name);
-//                 ExtentLogger.info("Product in cart: " + name);
+            for (String name : productNames) {
+                logger.info("Product in cart: " + name);
+                ExtentLogger.info("Product in cart: " + name);
 
-//                 if (name.equalsIgnoreCase(expectedProductName.trim())) {
-//                     productFound = true;
-//                     actualProductName = name;
-//                     break;
-//                 }
-//             }
+                if (name.equalsIgnoreCase(expectedProductName.trim())) {
+                    productFound = true;
+                    actualProductName = name;
+                    break;
+                }
+            }
 
-// // ✅ Assert with expected vs actual
-//             Assert.assertTrue(productFound,
-//                     "Cart validation failed! Expected product: [" + expectedProductName + "] but found: " + productNames);
+// ✅ Assert with expected vs actual
+            Assert.assertTrue(productFound,
+                    "Cart validation failed! Expected product: [" + expectedProductName + "] but found: " + productNames);
 
-//             logger.info("Cart validation successful. Expected: [" + expectedProductName + "] | Actual: [" + actualProductName + "]");
-//             ExtentLogger.pass("Cart validation successful. Expected: [" + expectedProductName + "] | Actual: [" + actualProductName + "]");
+            logger.info("Cart validation successful. Expected: [" + expectedProductName + "] | Actual: [" + actualProductName + "]");
+            ExtentLogger.pass("Cart validation successful. Expected: [" + expectedProductName + "] | Actual: [" + actualProductName + "]");
 
-//         } catch (Exception e) {
-//             logger.error("Cart validation failed: " + e.getMessage());
-//             ExtentLogger.fail("Cart validation failed: " + e.getMessage());
-//             Assert.fail("Cart validation failed: " + e.getMessage());
-//         }
-//     }
+        } catch (Exception e) {
+            logger.error("Cart validation failed: " + e.getMessage());
+            ExtentLogger.fail("Cart validation failed: " + e.getMessage());
+            Assert.fail("Cart validation failed: " + e.getMessage());
+        }
+    }
 
     public void goToCheckout() {
         try {
